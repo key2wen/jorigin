@@ -34,5 +34,11 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.8" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-common:3.2.8" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-remoting:3.2.8" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.3" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.0.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.1" level="project" />
   </component>
 </module>
