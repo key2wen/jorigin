@@ -61,6 +61,8 @@ public class UseExample {
          */
         message.setDelayTimeLevel(5);
         rocketMqProducer.sendMessage(message);
+
+        //某些应用如果不关注消息是否发送成功，请直接使用sendOneWay方法发送消息
     }
 
     private void sendBySort() {
