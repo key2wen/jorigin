@@ -11,6 +11,8 @@ public class RocketMqMessage implements Message {
 
     private String tags;
 
+    private Integer delayTimeLevel;
+
 
     public RocketMqMessage() {
         this.tags = "";
@@ -46,5 +48,13 @@ public class RocketMqMessage implements Message {
 
     public void setKeys(String keys) {
         this.keys = keys;
+    }
+
+    public Integer getDelayTimeLevel() {
+        return delayTimeLevel;
+    }
+
+    public void setDelayTimeLevel(Integer delayTimeLevel) {
+        this.delayTimeLevel = delayTimeLevel;
     }
 }
