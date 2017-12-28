@@ -1,4 +1,4 @@
-package com.key.jorigin.zk;
+package com.key.jorigin.zk.zkclient;
 
 import org.I0Itec.zkclient.ZkClient;
 
