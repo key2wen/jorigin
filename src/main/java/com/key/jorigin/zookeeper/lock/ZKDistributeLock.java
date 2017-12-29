@@ -1,4 +1,4 @@
-package com.key.jorigin.lock;
+package com.key.jorigin.zookeeper.lock;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.curator.RetryPolicy;
@@ -19,7 +19,7 @@ public class ZKDistributeLock {
 
     /**
      * 参考 jdk Lock  设计
-     * void lock();
+     * void lock();  //会一直阻塞
      * void lockInterruptibly() throws InterruptedException;
      * boolean tryLock();
      * boolean tryLock(long time, TimeUnit unit) throws InterruptedException;
