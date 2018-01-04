@@ -23,7 +23,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:3.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:3.2.5.RELEASE" level="project" />
@@ -58,5 +57,11 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: com.caucho:hessian:4.0.38" level="project" />
+    <orderEntry type="library" name="Maven: io.reactivex:rxjava:1.1.6" level="project" />
+    <orderEntry type="library" name="Maven: net.oschina.zcx7878:fastdfs-client-java:1.27.0.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.2" level="project" />
   </component>
 </module>
