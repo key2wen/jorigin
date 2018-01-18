@@ -1,0 +1,56 @@
+1. Buffer API
+2. ByteBuf - 字节数据容器
+1. ByteBuf如何在工作
+2. 不同类型的ByteBuf 3. ByteBuf的字节操作
+1. 随机访问索引
+2. 顺序访问索引
+3. Discardable bytes废弃字节
+4. 可读字节实际内容
+5. 可写字节Writable bytes
+6. 清除缓冲区索引Clearing the buffer indexs 7. 搜索操作Search operations
+8. 标准和重置Mark and reset
+9. 衍生的缓冲区Derived buffers
+10. 读写操作以及其他一些操作 4. ByteBufHolder
+1. ByteBufAllocator 2. Unpooled
+3. ByteBufUtil
+5. Summary
+
+
+本章介绍
+ByteBuf
+ByteBufHolder
+ByteBufAllocator 使用这些接口分配缓冲和执行操作
+每当你需要传输数据时,它必须包含一个缓冲区。Java NIO API自带的缓冲区类是相当有限的,没有经过优化,使用JDK的 ByteBuffer操作更复杂。缓冲区是一个重要的组建,它是API的一部分。Netty提供了一个强大的缓冲区实现用于表示一个字节序列,并帮 助你操作原始字节或自定义的POJO。Netty的ByteBuf相当于JDK的ByteBuffer,ByteBuf的作用是在Netty中通过Channel传输数据。它被 重新设计以解决JDK的ByteBuffer中的一些问题,从而使开发人员开发网络应用程序显得更有效率。本章将讲述Netty中的缓冲区,并了 解它为什么比JDK自带的缓冲区实现更优秀,还会深入了解在Netty中使用ByteBuf访问数据以及如何使用它。
+5.1 Buffer API
+Netty的缓冲API有两个接口: ByteBuf
+ByteBufHolder
+Netty使用reference-counting(引用计数)的时候知道安全释放Buf和其他资源,虽然知道Netty有效的使用引用计数,这都是自动完成的。 这允许Netty使用池和其他技巧来加快速度和保持内存利用率在正常水平,你不需要做任何事情来实现这一点,但是在开发Netty应用程序 时,你应该处理数据尽快释放池资源。
+Netty缓冲API提供了几个优势:
+
+可以自定义缓冲类型
+通过一个内置的复合缓冲类型实现零拷贝
+扩展性好,比如StringBuffer
+不需要调用flip()来切换读/写模式
+读取和写入索引分开
+方法链
+引用计数
+Pooling(池)
+
+5.2 ByteBuf - 字节数据容器 当需要与远程进行交互时,需要以字节码发送/接收数据。由于各种原因,一个高效、方便、易用的数据接口是必须的,而Netty的
+ByteBuf满足这些需求,ByteBuf是一个很好的经过优化的数据容器,我们可以将字节数据有效的添加到ByteBuf中或从ByteBuf中获取数 据。ByteBuf有2部分:一个用于读,一个用于写。我们可以按顺序的读取数据,并且可以跳到开始重新读一遍。所有的数据操作,我们 只需要做的是调整读取数据索引和再次开始读操作
+
+
+
+5.2.1 ByteBuf如何在工作?
+写入数据到ByteBuf后,写入索引是增加的字节数量。开始读字节后,读取索引增加。你可以读取字节,直到写入索引和读取索引处
+理相同的位置,次数若继续读取,则会抛出IndexOutOfBoundsException。调用ByteBuf的任何方法开始读/写都会单独维护读索引和写索 引。ByteBuf的默认最大容量限制是Integer.MAX_VALUE,写入时若超出这个值将会导致一个异常。
+ByteBuf类似于一个字节数组,最大的区别是读和写的索引可以用来控制对缓冲区数据的访问。下图显示了一个容量为16的 ByteBuf:
+
+ 5.2.2 不同类型的ByteBuf 使用Netty时会遇到3种不同类型的ByteBuf
+ Heap Buffer(堆缓冲区) 最常用的类型是ByteBuf将数据存储在JVM的堆空间,这是通过将数据存储在数组的实现。堆缓冲区可以快速分配,当不使用时也可
+ 以快速释放。它还提供了直接访问数组的方法,通过ByteBuf.array()来获取byte[]数据。 访问非堆缓冲区ByteBuf的数组会导致UnsupportedOperationException,可以使用ByteBuf.hasArray()来检查是否支持访问数组。
+ Direct Buffer(直接缓冲区) 直接缓冲区,在堆之外直接分配内存。直接缓冲区不会占用堆空间容量,使用时应该考虑到应用程序要使用的最大内存容量以及如
+ 何限制它。直接缓冲区在使用Socket传递数据时性能很好,因为若使用间接缓冲区,JVM会先将数据复制到直接缓冲区再进行传递;但 是直接缓冲区的缺点是在分配内存空间和释放内存时比堆缓冲区更复杂,而Netty使用内存池来解决这样的问题,这也是Netty使用内存池 的原因之一。直接缓冲区不支持数组访问数据,但是我们可以间接的访问数据数组,如下面代码
+
+ 更多请看
+ //@see test3_buffers/Test1.java
