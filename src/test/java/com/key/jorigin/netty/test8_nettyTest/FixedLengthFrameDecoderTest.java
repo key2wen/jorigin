@@ -6,6 +6,8 @@ import io.netty.channel.embedded.EmbeddedChannel;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.concurrent.ThreadPoolExecutor;
+
 public class FixedLengthFrameDecoderTest {
     @Test
     public void testFramesDecoded() {
