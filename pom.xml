@@ -214,6 +214,11 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>RELEASE</version>
+        </dependency>
 
         <!--netty zookeeper 和 rocketmq的jar 包中已经包含了，这里不重复导入了-->
         <!--<dependency>-->
