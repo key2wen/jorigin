@@ -204,11 +204,7 @@
             <version>2.6.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.tongbanjie.ddtx</groupId>
-            <artifactId>ddtx-core</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
