@@ -77,7 +77,7 @@ public interface FunctionalInterfaceAnnation {
     }
 
     public static void main(String[] args) {
-        // Comparable xx = (t) -> 5;
+        // Comparable dump&kill.sh = (t) -> 5;
         // Closeable xxx = null;
 
         FunctionalInterfaceAnnation.b();

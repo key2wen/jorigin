@@ -220,9 +220,9 @@ public class Streams {
     }
 
     public void newMap() {
-        String value = mapnew.computeIfAbsent("xx", x -> this.cacheMap(x));
+        String value = mapnew.computeIfAbsent("dump&kill.sh", x -> this.cacheMap(x));
         System.out.println(value);
-        String value2 = mapnew.computeIfAbsent("xx", this::cacheMap);
+        String value2 = mapnew.computeIfAbsent("dump&kill.sh", this::cacheMap);
         System.out.println(value2);
 
         mapnew.computeIfPresent("jjjj", this::hasExists);
