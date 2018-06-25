@@ -21,12 +21,31 @@ public class UseExample {
     RocketMqProducer rocketMqProducer;
 
     private void producer() {
+
+        /**
+         * Producer Group这个概念发送普通的消息时，作用不大，但是发送分布式事务消息时，比较关键，
+         * 因为服务器会回查这个Group下的任意一个Producer
+         */
         RocketMqProducer producer = new RocketMqProducer("group_test", "topic_test", "namesvr_test");
         producer.init();
         rocketMqProducer = producer;
     }
 
     private void consumer() throws Exception {
+
+        /**
+         * 消息订阅模式： push(具体实现也是消息端主动拉取) | pull
+         *
+         * 遍历Consumer下的所有topic，然后根据topic订阅所有的消息
+         * 获取同一topic和Consumer Group下的所有Consumer
+         * 然后根据具体的分配策略来分配消费队列，分配的策略包含：平均分配、消费端配置等
+         *
+         * 由于topic 多个队列根据consumer数量平均分配消费，即可以通过增加consumer水平扩展提升消费能力
+         * 但是如果发送消息标记了keys，则会失去分配消费的能力，同时实现消息的顺序消费功能。
+         *
+         */
+
+
         //push
         MyPushListener listener = new MyPushListener();
         RocketMqConsumer consumer = new RocketMqConsumer("group_test", "topic_test",
@@ -60,6 +79,13 @@ public class UseExample {
          * level=0，表示不延时。level=1，表示 1 级延时，对应延时 1s。level=2 表示 2 级延时，对应5s，以此类推
          */
         message.setDelayTimeLevel(5);
+
+        /**
+         * Message Tag HashCode存储消息的Tag的哈希值：主要用于订阅时消息过滤
+         * （订阅时如果指定了Tag，会根据HashCode来快速查找到订阅的消息
+         */
+        message.setTags("tag_test");
+
         rocketMqProducer.sendMessage(message);
 
         //某些应用如果不关注消息是否发送成功，请直接使用sendOneWay方法发送消息
@@ -67,6 +93,24 @@ public class UseExample {
 
     private void sendBySort() {
         RocketMqMessage message = new StringMessage("body");
+
+        /**
+         * 1. 使用了keys 消息索引就不会存储在consume_queue(Topic+queueNo形成consumeQueue的最小单位集合)文件中,即也不会根据consume_queue对应的topic来消费(topic下有多个queue无法保证消息消费顺序)，
+         *    也无法根据 tag来过滤消息消费，因为tag只存储在consume_queue对应topic的索引文件上
+         *    Consume_queue最小单位集合内容(存储单元格式：CommitLogOffset+Size+MessageTagHashCode)
+         * 2.使用来keys 消息索引会存储在 indexFile上（一个类似hashMap结构的文件（slotTable + Index_Linked_List））
+         *   slotTable : MaxSlotNum=500w,  根据keys%slotNum找到对应槽位，放入对应链表最后
+         *   IndexFile索引内容(存储单元格式：keyHash+CommitLogOffset+Timestamp+NextIndexOffset)
+         * 3. 消息的物理存储位置不变，都是在：commit_log file
+         *
+         * 4. 使用了keys, 消费者也就无法进行平均分配，负载均衡
+         *
+         * 5. todo 上面总结的有点小问题 设置了keys应该消息还是会存储在consume_queue中，只是指定了发给某一个queue；消费端拉取消息时，
+         *  todo 被分配到该queue的消费者单独对它消费; 这样消费者才能区分topic进行消费；
+         *
+         */
+
+        message.setKeys("orderIdxxsdfasdfasdfa");
 
         /**
          * 由于同个topic下有多个队列，队列内部的消息可以保证顺序消费，但多个队列间的消息无法保证消费顺序
