@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.apacheK;
+package com.key.jorigin.kafka.apacheK;
 
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

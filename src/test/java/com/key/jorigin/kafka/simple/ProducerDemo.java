@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.simple;
+package com.key.jorigin.kafka.simple;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;

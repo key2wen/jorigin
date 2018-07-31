@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.low_api_k210_0821;
+package com.key.jorigin.kafka.low_api_k210_0821;
 
 import kafka.api.FetchRequestBuilder;
 import kafka.api.PartitionOffsetRequestInfo;

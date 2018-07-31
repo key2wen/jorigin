@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.low_api_k210_0821;
+package com.key.jorigin.kafka.low_api_k210_0821;
 
 /**
  * 主要功能是保存读取具体分区的信息，包括topic名称和partition ID；

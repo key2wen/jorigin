@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.apacheK;
+package com.key.jorigin.kafka.apacheK;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;

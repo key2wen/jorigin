@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.k211_0822;
+package com.key.jorigin.kafka.k211_0822;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;

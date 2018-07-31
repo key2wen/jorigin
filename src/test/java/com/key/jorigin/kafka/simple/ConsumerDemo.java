@@ -1,4 +1,4 @@
-package com.key.jorigin.mq.kafka.simple;
+package com.key.jorigin.kafka.simple;
 
 import kafka.consumer.Consumer;
 import kafka.consumer.ConsumerConfig;
