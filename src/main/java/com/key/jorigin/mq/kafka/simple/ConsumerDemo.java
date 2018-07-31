@@ -28,6 +28,13 @@ public class ConsumerDemo {
 
         props.put("group.id", "1111");
 
+        /**
+         * auto.offset.reset 默认值为largest，那么auto.offset.reset 有什么作用呢？auto.offset.reset定义了Consumer在ZooKeeper中发现没有初始的offset时或者发现offset非法时定义Comsumer的行为，常见的配置有：
+
+         smallest : 自动把offset设为最小的offset；
+         largest : 自动把offset设为最大的offset；
+         anything else: 抛出异常；
+         */
         props.put("auto.offset.reset", "smallest");
 
 
@@ -37,7 +44,7 @@ public class ConsumerDemo {
 
         Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
 
-        topicCountMap.put(topic, 1);
+        topicCountMap.put(topic, 1); //一次从主题中获取一个数据
 
         topicCountMap.put("mygirls", 1);
 
