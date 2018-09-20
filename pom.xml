@@ -6,7 +6,11 @@
 
     <groupId>com.key</groupId>
     <artifactId>jorigin</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>Test</module>
+    </modules>
 
 
     <properties>
