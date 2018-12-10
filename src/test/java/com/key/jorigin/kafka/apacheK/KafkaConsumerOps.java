@@ -13,6 +13,8 @@ import java.util.Properties;
 
 /**
  * kafka_2.10 0.10.0.1 版本
+ *
+ * or kafka_2.12 2.1.0 版本
  */
 public class KafkaConsumerOps {
     public static void main(String[] args) throws IOException {
