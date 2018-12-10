@@ -21,7 +21,7 @@
         <downloadSources>true</downloadSources>
         <!-- compiler settings properties -->
         <file_encoding>UTF-8</file_encoding>
-        <JAVA8_HOME>/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home</JAVA8_HOME>
+        <JAVA8_HOME>/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home</JAVA8_HOME>
     </properties>
 
     <dependencies>
