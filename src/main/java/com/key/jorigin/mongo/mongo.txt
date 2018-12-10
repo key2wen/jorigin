@@ -1,0 +1,188 @@
+tar xzf mongdo-***.tgz
+rsync -a bin  /usr/local/mongodb
+
+cd /usr/local/mongodb
+ls bin
+
+
+cd bin
+启动mongodb:
+./mongod --dbpath=/usr/local/mongdb/data/ --logpath=/usr/local/mongodb/dblogs --fork
+pstree -p | grep mongod //查看mongdb进程
+
+把mongodb的启动加入到 vi /etc/rc.local
+/usr/local/mongodb/bin/mongod --dbpath=/usr/local/mongodb/data/ --logpath=/usr/local/mongodb/dblogs --fork
+pkill mongod 或者 killall //杀掉mongdb进程 不能用 kill -9 2596
+
+
+如果用了kill -9 2596 ,则再次启动mongodb需要:
+cd data/
+rm -rf mongod.lock
+
+ps -ef | grep mongod
+
+netstat -tunpl | grep :27017
+
+
+6.登录：
+cd bin/
+./mongo
+
+show dbs
+local
+exit //退出登录
+bye
+
+db  //当前数据库
+show tables; 或 show collections;
+db.c1.insert({name:"user1"});
+show dbs
+show tables;
+c1   //集合
+system.indexes
+
+db.c1.find();
+
+cd data
+ll -h //查看数据
+
+db.c1.drop();
+增删改查：
+db.c1.insert({name:"user2", age:20});
+db.c1.find();
+db.c1.remove();
+db
+
+db.c1.update({name:"user2"},{name:"user22"});
+db.c1.update({name:"user2"},{$set:{name:"user222"}}); //age不会丢
+db.c1.update({name:"user2"},{$set:{sex:"nan"}});//添加sex
+
+
+mongodb:
+结构：
+数据库
+集合 ----table
+json ----字段
+
+
+
+第二天
+高级应用片：
+
+count(); skip(); limit();
+sort(); $all $exit
+findOne()
+
+
+windows:
+--install --remove
+sc delete mongodb
+net start MongoDB
+net stop MongoDB
+
+
+linux:
+
+2.mongodb性能片：
+
+GridFS 存储管理mongodb大的二进制文件
+包括：files 和 chunks
+
+mongofiles list
+tar czf mongosniff.tar.gz mongosniff //制作tar文件
+./mongofiles put mongosniff.tar.gz 上传文件
+db.fs.chunks.find (); //上传文件后mongo中会增加fs.chunks和fs.files两个集合
+db.fs.files.find();
+ du -sh mongoshiff.tar.gz //查看文件的大小
+./mongofiles get mongosniff.tar.gz //下载文件
+tar xzf mongosniff.tar.gz
+./mongofiles delete mongosniff.tar.gz
+
+md5sum mongosniff.tar.gz //查看文件的md5码
+
+索引：
+db.c1.find({name:"user1"}).explain();//查看查询计划
+db.c1.ensureIndex（{name:1}）；//在name上建立索引
+db.c1.getIndexKeys() //查看索引清单
+db.c1.ensureIndex({name:1},{background:true});//在服务器后台建立
+db.c1.ensureIndex({name:1},{unique:1});//唯一索引
+db.c1.dropIndex({age:1});//删除索引
+db.c1.dropIndexes(); //删除所有的索引，id索引除外
+
+优化器：profile
+mongodb database profiler //慢查询日志
+db.getProfilingLevel()
+db.setProfilingLevel(1);//记录开启慢查询
+db.setProfilingLevel(1, 1000);//默认100ms
+
+cappedcollection:
+capped collections 比普通的collections的读写效率高
+
+db.c1.stats(); //查看集合c1信息
+db.system.indexes.find();
+db.createCollection("c2", {capped:true,size:100000,max:5});
+//创建固定集合，集合大小的单位为字节，记录最大为5个，覆盖记录为：LRU算法
+db.runCommand({convertToCapped:"c1",size:1000000,max:6});
+//将普通集合转化为固定集合
+
+mongosniff 和 mongostat
+./mongosniff --source net lo //监控：通讯信息
+
+./mongostat //监控信息（crud等操作）
+
+
+3.mongodb的管理篇：
+数据导出、数据导入、数据备份、数据恢复
+用户的安全与认证
+
+导出：
+./mongoexport -d test -c c1 -o /tmp/c1.out
+cat c1.out
+导入：
+./mongoimport -d test -c c1 /tmp/c1.out
+db.c1.stat();  db.c1.count();
+
+备份：
+./mongodump -d test -o /tmp
+ls
+c1.bson  systemindex.bson
+恢复：
+./mongorestore -d test /tmp/test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
