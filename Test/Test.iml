@@ -33,7 +33,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.7" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.8" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.rocketmq:rocketmq-common:3.2.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.9" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />

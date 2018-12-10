@@ -100,12 +100,13 @@
         <dependency>
             <groupId>com.alibaba.rocketmq</groupId>
             <artifactId>rocketmq-client</artifactId>
-            <version>3.2.7</version>
+            <!--<version>3.2.7</version>-->
+            <version>3.2.6</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.rocketmq</groupId>
             <artifactId>rocketmq-common</artifactId>
-            <version>3.2.7</version>
+            <version>3.2.6</version>
         </dependency>
 
 
