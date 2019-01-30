@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:elasticsearch="http://www.springframework.org/schema/data/elasticsearch"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+
+
+
+
+        http://www.springframework.org/schema/data/elasticsearch http://www.springframework.org/schema/data/elasticsearch/spring-elasticsearch.xsd">
+
+    <!--1. -->
+    <!--<repositories base-package="com.key.jorigin.spring.es" />-->
+
+
+    <!--2. -->
+    <!--<elasticsearch:repositories base-package="com.key.jorigin.spring.es.repository"-->
+    <!--query-lookup-strategy="use-declared-query"/>-->
+
+    <!-- cluster-node 用逗号分隔 -->
+    <!--<elasticsearch:transport-client id="client" cluster-nodes="localhost:9300" cluster-name="elasticsearch"/>-->
+
+    <bean name="entityMapper" class="com.key.jorigin.spring.es.json.FastjsonEntityMapper"/>
+
+    <!--<bean name="elasticsearchTemplate" class="org.springframework.data.elasticsearch.core.ElasticsearchTemplate">-->
+    <!--<constructor-arg name="client" ref="client"/>-->
+    <!--<constructor-arg name="entityMapper" ref="entityMapper"/>-->
+    <!--</bean>-->
+
+
+    <!-- 3. -->
+    <!-- 配置Client transport方式 -->
+    <elasticsearch:transport-client id="client" cluster-nodes="127.0.0.1:9300"/>
+
+    <!-- 配置Client node方式 -->
+    <!--<elasticsearch:node-client id="client" local="true"" />-->
+
+
+    <!-- 配置搜索模板(注意：模板的ID的名称不能随便写，只能为下面的ID名称)  -->
+    <bean id="elasticsearchTemplate"
+          class="org.springframework.data.elasticsearch.core.ElasticsearchTemplate">
+        <constructor-arg name="client" ref="client"/>
+        <constructor-arg name="entityMapper" ref="entityMapper"/>
+    </bean>
+
+    <!-- 配置 dao的扫描,这里配置你需要的扫描的包名 -->
+    <elasticsearch:repositories base-package="com.key.jorigin.spring.es.repository"
+    />
+
+
+</beans>
