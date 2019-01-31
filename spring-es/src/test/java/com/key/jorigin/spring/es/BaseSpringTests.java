@@ -3,6 +3,7 @@ package com.key.jorigin.spring.es;
 import com.key.jorigin.spring.es.entity.Prod;
 import com.key.jorigin.spring.es.entity.Suit;
 import com.key.jorigin.spring.es.repository.ProdRepository;
+import org.apache.commons.lang.time.DateFormatUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,28 +49,45 @@ public class BaseSpringTests extends AbstractJUnit4SpringContextTests {
     }
 
     @Test
-    public void get(){
+    public void get() {
         Prod prod = prodRepository.findOne(1l);
         System.out.println(prod);
+    }
+
+    @Test
+    public void del() {
+        prodRepository.delete(1l);
+        System.out.println("ok");
+    }
+
+    @Test
+    public void update() {
+        Prod prod = getProd(2); //已存在的对象
+
+        Prod res = prodRepository.save(prod);
+
+        System.out.println(res);
     }
 
     private Prod getProd(int p) {
 
         Prod prod = new Prod();
-        prod.setCountry("美国");
+        prod.setCountry("泰国");
         prod.setCreateTime(new Date());
+        prod.setUpdateTime(new Date());
+        prod.setCreateTime2(DateFormatUtils.format(new Date(), "yyyy-MM-dd'T'HH:mm:ss"));
         prod.setDesc("hah nice country haha i like it");
-        prod.setId((long)p);
-        prod.setName("美国7日游");
+        prod.setId((long) p);
+        prod.setName("美国8日游");
         prod.setPrice(1000l);
         prod.setStock(10l);
 
         List<Suit> suitList = new ArrayList<>(2);
-        for(int i = 0; i < 2; i++){
+        for (int i = 0; i < 2; i++) {
             Suit suit = new Suit();
             suit.setId(i + 1l);
             suit.setDesc(i + "好东西真不错");
-            suit.setName("套餐"+i);
+            suit.setName("套餐" + i);
             suit.setPrice(i + 1000l);
             suitList.add(suit);
         }

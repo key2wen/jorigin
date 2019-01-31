@@ -1,17 +1,14 @@
 package com.key.jorigin.spring.es.entity;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldIndex;
-import org.springframework.data.elasticsearch.annotations.FieldType;
+import org.springframework.data.elasticsearch.annotations.*;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 @Document(indexName = "springes", type = "prod", shards = 1, replicas = 0)
-public class Prod implements Serializable{
+public class Prod implements Serializable {
 
     @Id
     private Long id;
@@ -25,7 +22,17 @@ public class Prod implements Serializable{
     private String desc;
 
     @Field(type = FieldType.Date)
+//    @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second)
+//    @JsonProperty(value = "@timestamp")
+//    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd'T'HH:mm:ss")
+//    @DateTimeFormat(pattern="yyyy-MM-dd'T'HH:mm:ss")
     private Date createTime;
+
+    @Field(type = FieldType.Date, format = DateFormat.date_hour_minute_second)
+    private String createTime2;
+
+    @Field(type = FieldType.Date)
+    private Date updateTime;
 
     private Long stock; //库存
 
@@ -97,5 +104,21 @@ public class Prod implements Serializable{
 
     public void setSuitList(List<Suit> suitList) {
         this.suitList = suitList;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public String getCreateTime2() {
+        return createTime2;
+    }
+
+    public void setCreateTime2(String createTime2) {
+        this.createTime2 = createTime2;
     }
 }
