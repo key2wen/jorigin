@@ -42,6 +42,27 @@ public class Prod implements Serializable {
     @Field(type = FieldType.Nested)
     private List<Suit> suitList;
 
+    @Field(type = FieldType.Object)
+    private Country countryInfo;
+
+
+    //add
+    private Long brandId;
+
+    private Long categoryId;
+
+    private Integer sale; //销量
+
+    @Field(index = FieldIndex.analyzed, type = FieldType.String)
+    private String searchName;
+
+    @Field(index = FieldIndex.analyzed, type = FieldType.String)
+    private String searchBran;
+
+    //    @Field(analyzer = "ik_max_word",type = FieldType.String)
+    @Field(index = FieldIndex.analyzed, type = FieldType.String)
+    private String keywords;
+
     public Long getId() {
         return id;
     }
@@ -120,5 +141,62 @@ public class Prod implements Serializable {
 
     public void setCreateTime2(String createTime2) {
         this.createTime2 = createTime2;
+    }
+
+    public Country getCountryInfo() {
+        return countryInfo;
+    }
+
+    public void setCountryInfo(Country countryInfo) {
+        this.countryInfo = countryInfo;
+    }
+
+
+    public Long getBrandId() {
+        return brandId;
+    }
+
+    public void setBrandId(Long brandId) {
+        this.brandId = brandId;
+    }
+
+    public Long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Long categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Integer getSale() {
+        return sale;
+    }
+
+    public void setSale(Integer sale) {
+        this.sale = sale;
+    }
+
+    public String getSearchName() {
+        return searchName;
+    }
+
+    public void setSearchName(String searchName) {
+        this.searchName = searchName;
+    }
+
+    public String getSearchBran() {
+        return searchBran;
+    }
+
+    public void setSearchBran(String searchBran) {
+        this.searchBran = searchBran;
+    }
+
+    public String getKeywords() {
+        return keywords;
+    }
+
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
     }
 }
