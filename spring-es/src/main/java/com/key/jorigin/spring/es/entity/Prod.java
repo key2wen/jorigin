@@ -18,7 +18,7 @@ public class Prod implements Serializable {
 
     private Long price;
 
-    @Field(type = FieldType.String, index = FieldIndex.analyzed)
+    @Field(analyzer = "ik_smart", type = FieldType.String, index = FieldIndex.analyzed)
     private String desc;
 
     @Field(type = FieldType.Date)
@@ -53,14 +53,14 @@ public class Prod implements Serializable {
 
     private Integer sale; //销量
 
-    @Field(index = FieldIndex.analyzed, type = FieldType.String)
+    @Field(analyzer = "ik_max_word", index = FieldIndex.analyzed, type = FieldType.String)
     private String searchName;
 
     @Field(index = FieldIndex.analyzed, type = FieldType.String)
     private String searchBran;
 
     //    @Field(analyzer = "ik_max_word",type = FieldType.String)
-    @Field(index = FieldIndex.analyzed, type = FieldType.String)
+    @Field(analyzer = "ik_max_word", index = FieldIndex.analyzed, type = FieldType.String)
     private String keywords;
 
     public Long getId() {
