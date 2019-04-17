@@ -41,9 +41,10 @@ public class UseExample {
          * 获取同一topic和Consumer Group下的所有Consumer
          * 然后根据具体的分配策略来分配消费队列，分配的策略包含：平均分配、消费端配置等
          *
-         * 由于topic 多个队列根据consumer数量平均分配消费，即可以通过增加consumer水平扩展提升消费能力
+         * ===>由于topic 多个队列根据consumer数量平均分配消费，即可以通过增加consumer水平扩展提升消费能力
          * 但是如果发送消息标记了keys，则会失去分配消费的能力，同时实现消息的顺序消费功能。
          *
+         * todo 上面 ===>的说法好像不对，设置了keys,只是方便排查问题，不会影响消费逻辑
          */
 
 
