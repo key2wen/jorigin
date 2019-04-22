@@ -11,9 +11,13 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * create by zwh
- *
+ * <p>
  * http://ifeve.com/guava-source-cache/
- * guave cache: LRU淘汰策略(维护一个访问顺序双向链表) 超时清除策略(维护一个写入顺序双向链表)
+ * guave cache实现原理:
+ * 类似ConcurrentHashMap 的存储结构存储数据（线程安全）
+ * LRU淘汰策略 (数据超量,维护一个访问顺序双向链表,淘汰表头数据)
+ * 超时清除策略 (数据超时，维护一个写入顺序双向链表，淘汰表头数据)
+ * 获取/写入 数据操作时做相应的淘汰策略
  */
 public class LinkedListTest {
 
