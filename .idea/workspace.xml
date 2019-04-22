@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28067b6f-6330-44c2-a981-fd90a8f193e1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java" afterPath="$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Test/src/test/java/CopyTest.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Test/Test.iml" afterPath="$PROJECT_DIR$/Test/Test.iml" />
+      <change beforePath="$PROJECT_DIR$/Test/pom.xml" afterPath="$PROJECT_DIR$/Test/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Test/target/" />
@@ -17,104 +20,146 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UseExample.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java">
+      <file leaf-file-name="BloomFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/src/test/java/BloomFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="46" column="56" lean-forward="false" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+            <state relative-caret-position="722">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageExt.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-common/3.2.6/rocketmq-common-3.2.6.jar!/com/alibaba/rocketmq/common/message/MessageExt.class">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/src/test/java/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketMqConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/RocketMqConsumer.java">
+      <file leaf-file-name="RocketMQReceiveHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/consumer/RocketMQReceiveHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="52" column="11" lean-forward="false" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+            <state relative-caret-position="555">
+              <caret line="119" column="27" lean-forward="false" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/msg/StringMessage.java">
+      <file leaf-file-name="CopyTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/src/test/java/CopyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RocketMqMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/msg/RocketMqMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RocketMqProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/RocketMqProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="292">
+              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding>
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1011#1012#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1198#1199#0" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RocketMQSendHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/producer/RocketMQSendHandler.java">
+      <file leaf-file-name="CopyTest2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/src/test/java/CopyTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+            <state relative-caret-position="-230">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="e#1202#1203#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeanUtils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/org/apache/commons/beanutils/BeanUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="BeanUtilsBean.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/org/apache/commons/beanutils/BeanUtilsBean.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5352">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="134">
+              <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-es/pom.xml">
+      <file leaf-file-name="BeanUtils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.5.RELEASE/spring-beans-3.2.5.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="281" column="19" lean-forward="false" selection-start-line="281" selection-start-column="19" selection-end-line="281" selection-end-column="19" />
+              <folding>
+                <marker date="1533644180982" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1533644180982" expanded="false" signature="149:903" ph="..." />
+                <marker date="1533644180982" expanded="true" signature="1154:1161" ph="{}" />
+                <marker date="1533644180982" expanded="true" signature="1249:1843" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="1936:2409" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="2525:2622" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="2736:3599" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="3693:3901" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="4005:4276" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="4402:4667" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="4801:5123" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="5251:6450" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="6528:8153" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="8255:8390" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="8510:8656" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="8754:9233" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="9312:11050" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="11141:11604" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="11687:11895" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="11956:12127" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="12189:12506" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="12598:12674" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="12785:12858" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="12977:13055" ph="{...}" />
+                <marker date="1533644180982" expanded="true" signature="13194:15246" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultMQPushConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/consumer/DefaultMQPushConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <caret line="364" column="41" lean-forward="false" selection-start-line="364" selection-start-column="41" selection-end-line="364" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultMQPushConsumerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/impl/consumer/DefaultMQPushConsumerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1149">
+              <caret line="641" column="16" lean-forward="false" selection-start-line="641" selection-start-column="16" selection-end-line="641" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -135,7 +180,12 @@
       <find>2.10</find>
       <find>CityRepository</find>
       <find>metrics-core</find>
+      <find>keys</find>
+      <find>O2</find>
     </findStrings>
+    <replaceStrings>
+      <replace>O</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,6 +220,9 @@
         <option value="$PROJECT_DIR$/Test/src/test/java/Solution.java" />
         <option value="$PROJECT_DIR$/spring-es/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java" />
+        <option value="$PROJECT_DIR$/Test/src/test/java/Ha.java" />
+        <option value="$PROJECT_DIR$/Test/src/test/java/CopyTest2.java" />
+        <option value="$PROJECT_DIR$/Test/src/test/java/CopyTest.java" />
       </list>
     </option>
   </component>
@@ -198,6 +251,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="835" />
@@ -230,43 +284,30 @@
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-es" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -274,29 +315,20 @@
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="CopyTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="CopyTest2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
@@ -417,7 +449,42 @@
               <item name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.6" type="70bed36:NamedLibraryElementNode" />
               <item name="rocketmq-client-3.2.6.jar" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="rocketmq-client-3.2.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
               <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="rocketmq-client-3.2.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: commons-beanutils:commons-beanutils:1.9.3" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: commons-beanutils:commons-beanutils:1.9.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-beanutils-1.9.3.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: commons-beanutils:commons-beanutils:1.9.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-beanutils-1.9.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beanutils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
@@ -481,6 +548,24 @@
               <item name="mongo-java-driver-3.2.2.jar" type="462c0819:PsiDirectoryNode" />
               <item name="mongodb" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:3.2.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:3.2.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-3.2.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:3.2.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-3.2.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -504,6 +589,7 @@
       <recent name="com.key.jorigin.spring.es" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.key.jorigin.spring.es.json" />
     </key>
   </component>
@@ -519,7 +605,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.CopyTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -530,6 +616,34 @@
     <configuration name="BloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="BloomFilter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Test" />
+      <envs />
+    </configuration>
+    <configuration name="CopyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CopyTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Test" />
+      <envs />
+    </configuration>
+    <configuration name="CopyTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CopyTest2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -568,56 +682,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="BaseSpringTests.saveList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.key.jorigin.spring.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spring-es" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.key.jorigin.spring.es" />
-      <option name="MAIN_CLASS_NAME" value="com.key.jorigin.spring.es.BaseSpringTests" />
-      <option name="METHOD_NAME" value="saveList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="BaseSpringTests.simpleSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.key.jorigin.spring.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="spring-es" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.key.jorigin.spring.es" />
-      <option name="MAIN_CLASS_NAME" value="com.key.jorigin.spring.es.BaseSpringTests" />
-      <option name="METHOD_NAME" value="simpleSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="BaseSpringTests.testProdMapping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -705,19 +769,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.saveList" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.testProdMapping" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.simpleSearch" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BloomFilter" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.testProdMapping" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BloomFilter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CopyTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CopyTest2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BloomFilter" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.testProdMapping" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.saveList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.simpleSearch" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CopyTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CopyTest2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BloomFilter" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BaseSpringTests.testProdMapping" />
       </list>
     </recent_temporary>
   </component>
@@ -740,7 +804,7 @@
       <workItem from="1551964978685" duration="4051000" />
       <workItem from="1552274556129" duration="904000" />
       <workItem from="1552740448817" duration="10000" />
-      <workItem from="1554694028772" duration="11429000" />
+      <workItem from="1554694028772" duration="15464000" />
     </task>
     <servers />
   </component>
@@ -777,7 +841,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67596000" />
+    <option name="totallyTimeSpent" value="71631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -795,26 +859,26 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33131802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5139057" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36033857" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32043532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40266022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.286578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.78597337" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25178826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8783784" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25178826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.080829754" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5139057" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -839,14 +903,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36081082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36033857" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32043532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7864865" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8783784" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25178826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -980,114 +1044,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-es/src/test/java/com/key/jorigin/spring/es/CityRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-es/src/test/java/com/key/jorigin/spring/es/ESTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.3.3/elasticsearch-2.3.3.jar!/org/elasticsearch/search/sort/FieldSortBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/2.3.3/elasticsearch-2.3.3.jar!/org/elasticsearch/search/sort/SortOrder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-es/src/main/java/com/key/jorigin/spring/es/entity/Suit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-es/src/main/java/com/key/jorigin/spring/es/entity/Prod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/2.1.0.RELEASE/spring-data-elasticsearch-2.1.0.RELEASE.jar!/org/springframework/data/elasticsearch/core/ElasticsearchTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="169" column="23" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-es/src/test/java/com/key/jorigin/spring/es/BaseSpringTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3116">
-          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar!/META-INF/maven/com.yammer.metrics/metrics-core/pom.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar!/META-INF/maven/com.yammer.metrics/metrics-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/redis/JsonSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/redis/HessianSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/fxml/BeanAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="460" column="31" lean-forward="false" selection-start-line="460" selection-start-column="31" selection-end-line="460" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1226,14 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/consumer/RocketMQReceiveHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17841">
@@ -1250,24 +1198,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/src/test/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/src/test/java/BloomFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1454,46 +1384,383 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-common/3.2.6/rocketmq-common-3.2.6.jar!/com/alibaba/rocketmq/common/message/MessageExt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <marker date="1544433547205" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544433547205" expanded="false" signature="159:297" ph="..." />
+            <marker date="1544433547205" expanded="true" signature="843:850" ph="{}" />
+            <marker date="1544433547205" expanded="true" signature="991:1218" ph="{...}" />
+            <marker date="1544433547205" expanded="true" signature="1303:1625" ph="{...}" />
+            <marker date="1544433547205" expanded="false" signature="1667:1678" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="1725:1731" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="1774:1785" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="1833:1839" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="1868:1879" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="1899:1905" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="1946:1957" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="1980:1986" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="2022:2033" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="2059:2065" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="2119:2130" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="2165:2171" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="2211:2222" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="2243:2249" ph=" }" />
+            <marker date="1544433547205" expanded="true" signature="2289:2537" ph="{...}" />
+            <marker date="1544433547205" expanded="true" signature="2581:2826" ph="{...}" />
+            <marker date="1544433547205" expanded="false" signature="2879:2890" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="2915:2921" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="2958:2969" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="2996:3002" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3058:3069" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3106:3112" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3153:3164" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3186:3192" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3247:3258" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3285:3291" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3321:3332" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3350:3356" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3396:3407" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3426:3432" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3461:3472" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3492:3498" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3539:3550" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3573:3579" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3608:3619" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3639:3645" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3686:3697" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3720:3726" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3760:3771" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3795:3801" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3851:3862" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3893:3899" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="3937:3948" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="3976:3982" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="4037:4048" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="4084:4090" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="4121:4132" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="4154:4160" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="4205:4216" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="4243:4249" ph=" }" />
+            <marker date="1544433547205" expanded="true" signature="4319:4418" ph="{...}" />
+            <marker date="1544433547205" expanded="false" signature="4454:4465" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="4492:4498" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="4553:4564" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="4601:4607" ph=" }" />
+            <marker date="1544433547205" expanded="false" signature="4655:4666" ph=" { " />
+            <marker date="1544433547205" expanded="false" signature="4704:4710" ph=" }" />
+            <marker date="1544433547205" expanded="true" signature="4789:4864" ph="{...}" />
+            <marker date="1544433547205" expanded="true" signature="4895:5465" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6.jar!/com/alibaba/rocketmq/client/producer/DefaultMQProducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding>
+            <marker date="1544433547210" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544433547210" expanded="false" signature="160:748" ph="..." />
+            <marker date="1544433547210" expanded="false" signature="1283:1294" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="1334:1340" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="1392:1403" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="1438:1444" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="1491:1502" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="1536:1542" ph=" }" />
+            <marker date="1544433547210" expanded="true" signature="1612:2073" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="2124:2175" ph="{...}" />
+            <marker date="1544433547210" expanded="false" signature="2203:2214" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="2252:2258" ph=" }" />
+            <marker date="1544433547210" expanded="true" signature="2355:2438" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="2565:2625" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="2766:2835" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="2964:3031" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="3174:3250" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="3358:3417" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="3561:3625" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="3783:3856" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="4002:4051" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="4211:4291" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="4416:4479" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="4649:4724" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="4908:4992" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="5164:5246" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="5432:5523" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="5674:5748" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="5897:6022" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="6120:6181" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="6297:6391" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="6480:6558" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="6628:6692" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="6762:6826" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="6907:6982" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="7117:7186" ph="{...}" />
+            <marker date="1544433547210" expanded="true" signature="7331:7426" ph="{...}" />
+            <marker date="1544433547210" expanded="false" signature="7464:7475" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="7501:7507" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="7563:7574" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="7609:7615" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="7654:7665" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="7692:7698" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="7756:7767" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="7804:7810" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="7846:7857" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="7884:7890" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="7945:7956" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="7993:7999" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="8047:8058" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="8097:8103" ph=" }" />
+            <marker date="1544433547210" expanded="true" signature="8183:8260" ph="{...}" />
+            <marker date="1544433547210" expanded="false" signature="8321:8332" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="8366:8372" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="8429:8440" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="8485:8491" ph=" }" />
+            <marker date="1544433547210" expanded="true" signature="8587:8676" ph="{...}" />
+            <marker date="1544433547210" expanded="false" signature="8712:8723" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="8750:8756" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="8811:8822" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="8859:8865" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="8908:8919" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="8953:8959" ph=" }" />
+            <marker date="1544433547210" expanded="true" signature="9029:9096" ph="{...}" />
+            <marker date="1544433547210" expanded="false" signature="9142:9153" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="9190:9196" ph=" }" />
+            <marker date="1544433547210" expanded="true" signature="9272:9345" ph="{...}" />
+            <marker date="1544433547210" expanded="false" signature="9378:9389" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="9410:9416" ph=" }" />
+            <marker date="1544433547210" expanded="false" signature="9465:9476" ph=" { " />
+            <marker date="1544433547210" expanded="false" signature="9503:9509" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-remoting/3.2.6/rocketmq-remoting-3.2.6.jar!/com/alibaba/rocketmq/remoting/netty/NettyRemotingClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="120" column="39" lean-forward="true" selection-start-line="120" selection-start-column="39" selection-end-line="120" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-remoting/3.2.6/rocketmq-remoting-3.2.6-sources.jar!/com/alibaba/rocketmq/remoting/common/ServiceThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <element signature="e#1356#1357#0" expanded="false" />
+            <element signature="e#1391#1392#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-remoting/3.2.6/rocketmq-remoting-3.2.6-sources.jar!/com/alibaba/rocketmq/remoting/netty/NettyRemotingClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="267" column="16" lean-forward="false" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="16" />
+          <folding>
+            <element signature="e#11396#11985#0" expanded="false" />
+            <element signature="e#11984#11985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/impl/MQClientAPIImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="168" column="13" lean-forward="true" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/impl/factory/MQClientInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="873" column="19" lean-forward="false" selection-start-line="873" selection-start-column="19" selection-end-line="873" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/impl/producer/DefaultMQProducerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="158" column="16" lean-forward="false" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/producer/DefaultMQProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+          <folding>
+            <element signature="e#2173#2174#0" expanded="false" />
+            <element signature="e#2214#2215#0" expanded="false" />
+            <element signature="e#8737#8738#0" expanded="false" />
+            <element signature="e#8774#8775#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/producer/RocketMQSendHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        <state relative-caret-position="335">
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/RocketMqProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="335">
+          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding>
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="false" />
+            <element signature="e#1217#1218#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/RocketMqConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="52" column="11" lean-forward="false" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-common/3.2.6/rocketmq-common-3.2.6.jar!/com/alibaba/rocketmq/common/message/MessageExt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="46" column="56" lean-forward="false" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+        <state relative-caret-position="526">
+          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/RocketMqConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/impl/consumer/DefaultMQPushConsumerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1149">
+          <caret line="641" column="16" lean-forward="false" selection-start-line="641" selection-start-column="16" selection-end-line="641" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/consumer/DefaultMQPushConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="364" column="41" lean-forward="false" selection-start-line="364" selection-start-column="41" selection-end-line="364" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mq/rocketmq/consumer/RocketMQReceiveHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="119" column="27" lean-forward="false" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/BloomFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.2.5.RELEASE/spring-beans-3.2.5.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="281" column="19" lean-forward="false" selection-start-line="281" selection-start-column="19" selection-end-line="281" selection-end-column="19" />
+          <folding>
+            <marker date="1533644180982" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1533644180982" expanded="false" signature="149:903" ph="..." />
+            <marker date="1533644180982" expanded="true" signature="1154:1161" ph="{}" />
+            <marker date="1533644180982" expanded="true" signature="1249:1843" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="1936:2409" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="2525:2622" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="2736:3599" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="3693:3901" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="4005:4276" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="4402:4667" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="4801:5123" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="5251:6450" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="6528:8153" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="8255:8390" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="8510:8656" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="8754:9233" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="9312:11050" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="11141:11604" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="11687:11895" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="11956:12127" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="12189:12506" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="12598:12674" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="12785:12858" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="12977:13055" ph="{...}" />
+            <marker date="1533644180982" expanded="true" signature="13194:15246" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/org/apache/commons/beanutils/BeanUtilsBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar!/org/apache/commons/beanutils/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/CopyTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/CopyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="e#1011#1012#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
