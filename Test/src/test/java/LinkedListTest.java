@@ -1,9 +1,38 @@
+import com.google.common.cache.CacheBuilder;
+import com.google.common.cache.CacheLoader;
+import com.google.common.cache.LoadingCache;
 import org.junit.Test;
 
 import java.util.Collection;
 import java.util.LinkedHashMap;
+import java.util.Random;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
+/**
+ * create by zwh
+ *
+ * http://ifeve.com/guava-source-cache/
+ * guave cache: LRU淘汰策略(维护一个访问顺序双向链表) 超时清除策略(维护一个写入顺序双向链表)
+ */
 public class LinkedListTest {
+
+
+    static LoadingCache<Long, Long> _sessionCache = CacheBuilder.newBuilder()
+            .maximumSize(100)
+            .expireAfterWrite(30, TimeUnit.MINUTES)
+            .build(new CacheLoader<Long, Long>() {
+
+                public Long load(Long key) throws Exception {
+                    //value
+                    return new Random().nextLong();
+                }
+            });
+
+    public void getCache() throws ExecutionException {
+        long key = 1;
+        _sessionCache.get(key);
+    }
 
 
     @Test
