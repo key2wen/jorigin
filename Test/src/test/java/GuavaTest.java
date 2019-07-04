@@ -1,6 +1,8 @@
 import com.google.common.util.concurrent.RateLimiter;
 import org.junit.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class GuavaTest {
 
     @Test
@@ -34,7 +36,7 @@ public class GuavaTest {
 
 
         for(int i = 0; i < 100; i++){
-            boolean ha = limiter2.tryAcquire(1);
+            boolean ha = limiter2.tryAcquire(1, TimeUnit.SECONDS);
             Thread.sleep(100l);
             if(ha) {
                 System.out.println("cutTime=" + i);

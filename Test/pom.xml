@@ -16,6 +16,35 @@
             <artifactId>commons-beanutils</artifactId>
             <version>RELEASE</version>
         </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.zookeeper</groupId>-->
+            <!--<artifactId>zookeeper</artifactId>-->
+            <!--<version>3.4.5</version>-->
+        <!--</dependency>-->
+
+        <!-- Storm Dependency -->
+        <!--<dependency>-->
+            <!--<groupId>storm</groupId>-->
+            <!--<artifactId>storm</artifactId>-->
+            <!--&lt;!&ndash;<version>0.6.0</version>&ndash;&gt;-->
+            <!--<version>0.8.2</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.apache.zookeeper</groupId>-->
+                    <!--<artifactId>zookeeper</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
+
+
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <!--<version>0.9.3</version>-->
+            <version>1.2.2</version>
+        </dependency>
+
     </dependencies>
 
 
