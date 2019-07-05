@@ -14,6 +14,8 @@ import org.apache.storm.tuple.Values;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * https://www.jianshu.com/p/185f369e5885
@@ -44,20 +46,61 @@ public class WordCountTopology {
 
     }
 
+    static Map<String, AtomicInteger> _AllCounts = new ConcurrentHashMap<>();
+
     //定义一个统计用的Bolt
     public static class WordCount extends BaseBasicBolt {
-        Map<String, Integer> counts = new HashMap<String, Integer>();
+        Map<String, Integer> _counts = new HashMap<String, Integer>();
+
+        @Override
+        public void cleanup() {
+            //zwh
+            System.out.println("========zwh start======");
+            for (Map.Entry entry : _AllCounts.entrySet()) {
+                System.out.println(entry.toString());
+            }
+            System.out.println("========zwh end======");
+        }
 
         @Override
         public void execute(Tuple tuple, BasicOutputCollector collector) {
             String word = tuple.getString(0);
-            Integer count = counts.get(word);
-            if (count == null)
-                count = 0;
-            count++;
-            counts.put(word, count);
+
+            Integer count = countWord(word);
+
+            countAllWord(word);
+
             collector.emit(new Values(word, count));
             printReport();
+        }
+
+        private Integer countAllWord(String word) {
+
+            AtomicInteger ai = _AllCounts.get(word);
+            if (ai == null) {
+                synchronized (this.getClass()) {
+                    ai = _AllCounts.get(word);
+                    if (ai == null) {
+                        _AllCounts.put(word, new AtomicInteger(1));
+                        return 0;
+                    }
+                }
+            }
+
+            return ai.incrementAndGet();
+        }
+
+        private Integer countWord(String word) {
+
+            Integer count = _counts.get(word);
+            if (count == null)
+                count = 0;
+
+            count++;
+
+            _counts.put(word, count);
+
+            return count;
         }
 
         //声明此Bolt的所有spout的输出模式
@@ -69,9 +112,9 @@ public class WordCountTopology {
         //输出LOG
         private void printReport() {
             System.out.println("------begin------");
-            Set<String> words = counts.keySet();
+            Set<String> words = _counts.keySet();
             for (String word : words) {
-                System.out.println(word + "\t-->\t" + counts.get(word));
+                System.out.println(word + "\t-->\t" + _counts.get(word));
             }
             System.out.println("-------end-------");
         }
@@ -103,7 +146,8 @@ public class WordCountTopology {
         } else {
             // 本地测试
             // 设定线程数上线
-            conf.setMaxTaskParallelism(3);
+//            conf.setMaxTaskParallelism(3);
+            conf.setMaxTaskParallelism(1);
 
             LocalCluster cluster = new LocalCluster();
             cluster.submitTopology("word-count", conf, builder.createTopology());
