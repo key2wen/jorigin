@@ -14,6 +14,7 @@
 //public class Test1 {
 //
 //    /**
+//     *https://blog.csdn.net/qq_37095882/article/details/77624246
 //     * 6. 一个简单的 Storm 实现
 //     * 实现一个拓扑包括一个 spout 和两个 bolt。Spout 发送单词。
 //     * 每个 bolt 在输入数据的 尾部追加字符串“!!!”。三个节点排成一条线:spout 发射给首个 bolt，然后，

@@ -19,6 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * https://www.jianshu.com/p/185f369e5885
+ * https://www.jianshu.com/nb/32785021
  * <p>
  * This topology demonstrates Storm's stream groupings
  * Adapted from https://github.com/nathanmarz/storm-starter under the Apache license
@@ -137,6 +138,18 @@ public class WordCountTopology {
 
 
         if (args != null && args.length > 0) {
+
+            /**
+             * mvn 打包上传到服务端 进行发布：
+             * ./bin/storm jar ~/storm_jar/uber-storm_test-1.0.jar count_word.WordCountTopology count_world
+             * #./bin/storm jar   封装包   main类，  入口   TOPOLOGY名
+             *
+             * 关停：
+             * 2）停止Storm Topology：　　storm kill {toponame}　　其中，
+             * {toponame}为Topology提交到Storm集群时指定的Topology任务名称。
+             *
+             */
+
             conf.setNumWorkers(3);
             //提交一个storm，以便在集群上运行。storm将永远运行，或者直到显式地终止。
             //拓扑名
