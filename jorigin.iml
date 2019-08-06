@@ -67,7 +67,6 @@
     <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:5.0.4" level="project" />
     <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.7" level="project" />
@@ -79,5 +78,26 @@
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka_2.10:0.8.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:3.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.redisson:redisson:3.11.2" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver-dns:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-dns:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.38.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.cache:cache-api:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: io.reactivex.rxjava2:rxjava:2.2.7" level="project" />
+    <orderEntry type="library" name="Maven: de.ruedigermoeller:fst:2.57" level="project" />
+    <orderEntry type="library" name="Maven: org.objenesis:objenesis:2.5.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.9" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.23" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.9" level="project" />
+    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.9.10" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-bean:5.0.10" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-core:5.0.10" level="project" />
   </component>
 </module>

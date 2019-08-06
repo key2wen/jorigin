@@ -285,6 +285,12 @@
             <version>3.2.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.11.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>

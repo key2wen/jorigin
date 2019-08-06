@@ -28,8 +28,17 @@ public class Test {
 //
 //        Object o;
 
-        System.out.println(Long.MAX_VALUE);
-        System.out.println(Long.MIN_VALUE);
+//        System.out.println(Long.MAX_VALUE);
+//        System.out.println(Long.MIN_VALUE);
+
+        Integer x = -128;
+        Integer xx = -128;
+
+        System.out.println(x == xx);
+        System.out.println(x.equals(xx));
+
+        ThreadLocal<String> tl = new ThreadLocal<>();
+        tl.set("");
 
     }
 
