@@ -3,6 +3,7 @@ import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
+//https://www.jianshu.com/p/5d4fe4b2a726
 public class GuavaTest {
 
     @Test
@@ -32,12 +33,17 @@ public class GuavaTest {
 //            System.out.println("cutTime="  + " acq:" + j[i] + " waitTime:" + waitTime);
 //        }
 
-        RateLimiter limiter2 = RateLimiter.create(1);
+        RateLimiter limiter2 = RateLimiter.create(1); //每秒生成的令牌数
 
 
         for(int i = 0; i < 100; i++){
-            boolean ha = limiter2.tryAcquire(1, TimeUnit.SECONDS);
+
+//            limiter2.acquire();//阻塞获取
+
             Thread.sleep(100l);
+
+            boolean ha = limiter2.tryAcquire(0, TimeUnit.SECONDS); //非阻塞，来设置等待超时时间的方式获取令牌，如果超timeout为0，则代表非阻塞，获取不到立即返回。
+
             if(ha) {
                 System.out.println("cutTime=" + i);
             } else {
