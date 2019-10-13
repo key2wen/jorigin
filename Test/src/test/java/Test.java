@@ -40,7 +40,15 @@ public class Test {
         ThreadLocal<String> tl = new ThreadLocal<>();
         tl.set("");
 
+        String xxx = "xxx";
+        change(xxx);
+
+        System.out.println(xxx);
+
     }
 
 
+    static void change(String x){
+        x = "new xx";
+    }
 }

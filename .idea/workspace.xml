@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="28067b6f-6330-44c2-a981-fd90a8f193e1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Test/src/test/java/GuavaTest.java" afterPath="$PROJECT_DIR$/Test/src/test/java/GuavaTest.java" />
+      <change beforePath="$PROJECT_DIR$/Test/src/test/java/Test.java" afterPath="$PROJECT_DIR$/Test/src/test/java/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Test/target/" />
@@ -18,116 +18,186 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedLock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/redis/RedLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="KafkaConsumerOps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/KafkaConsumerOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="198">
+              <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+              <folding>
+                <element signature="e#811#827#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/Constants.java">
+      <file leaf-file-name="MongoDBJDBC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mongo/runoob/MongoDBJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GuavaTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test/src/test/java/GuavaTest.java">
+      <file leaf-file-name="MongoDBJDBC2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mongo/runoob/MongoDBJDBC2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            <state relative-caret-position="519">
+              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#863#878#0" expanded="true" />
+                <element signature="e#1198#1215#0" expanded="true" />
+                <element signature="e#2566#2576#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RateLimiter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/util/concurrent/RateLimiter.java">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/src/test/java/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="421" column="16" lean-forward="true" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
+            <state relative-caret-position="118">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
-                <element signature="e#21640#21641#0" expanded="true" />
-                <element signature="e#21685#21686#0" expanded="true" />
-                <element signature="e#25222#25223#0" expanded="true" />
-                <element signature="e#25297#25298#0" expanded="true" />
+                <element signature="e#1253#1254#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SmoothRateLimiter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/util/concurrent/SmoothRateLimiter.class">
+      <file leaf-file-name="UseExample.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-              <folding>
-                <element signature="e#3058#3059#0" expanded="true" />
-                <element signature="e#3091#3092#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Preconditions.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/base/Preconditions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="122" column="21" lean-forward="false" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+            <state relative-caret-position="-1111">
+              <caret line="99" column="41" lean-forward="false" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeUnit.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
+      <file leaf-file-name="KafkaConsumer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.1.0/kafka-clients-2.1.0.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="244" column="16" lean-forward="false" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+            <state relative-caret-position="206">
+              <caret line="103" column="11" lean-forward="false" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
               <folding>
-                <element signature="e#9346#9347#0" expanded="true" />
-                <element signature="e#9393#9394#0" expanded="true" />
+                <marker date="1544434145482" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1544434145482" expanded="false" signature="157:3042" ph="..." />
+                <marker date="1544434145482" expanded="false" signature="4291:4302" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="4361:4367" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="4491:4653" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="4703:4788" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="4906:5071" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="5190:11703" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="12142:12977" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="13023:13282" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="13322:13575" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="13666:14898" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="14953:15041" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="15122:15794" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="15838:15849" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="15919:15925" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="15957:16408" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="16472:17977" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="17983:18001" ph="/**...*/" />
+                <marker date="1544434145482" expanded="false" signature="18071:18082" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="18134:18140" ph=" }" />
+                <marker date="1544434145482" expanded="false" signature="18197:18208" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="18257:18263" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="18351:19949" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="20009:20105" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="20195:21065" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="20801:20876" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="21095:21106" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="21173:21179" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="21226:21633" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="21710:21802" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="21897:22282" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="22313:22324" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="22369:22375" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="22436:22628" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="22737:22999" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="23061:23498" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="23571:24353" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="24420:25194" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="25247:25346" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="25417:26371" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="26438:26538" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="26623:27252" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="27308:27319" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="27378:27384" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="27445:27545" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="27624:28287" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="28346:28436" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="28511:28747" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="28810:29220" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="29284:29696" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="29738:29982" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="30097:30212" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="30345:31037" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="31132:31240" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="31353:31598" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="31687:31780" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="31887:32126" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="32151:32162" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="32200:32206" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="32212:32230" ph="/**...*/" />
+                <marker date="1544434145482" expanded="false" signature="32301:32312" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="32370:32376" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="32418:32845" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="32871:32882" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="32903:32909" ph=" }" />
+                <marker date="1544434145482" expanded="true" signature="33074:33590" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="33657:35185" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="35241:35693" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="35735:35918" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="35947:36296" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="36325:36436" ph="{...}" />
+                <marker date="1544434145482" expanded="true" signature="36486:36705" ph="{...}" />
+                <marker date="1544434145482" expanded="false" signature="36731:36742" ph=" { " />
+                <marker date="1544434145482" expanded="false" signature="36763:36769" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ticker.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/base/Ticker.java">
+      <file leaf-file-name="JavaKafkaSimpleConsumerAPITest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/JavaKafkaSimpleConsumerAPITest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="45">
+              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RateLimiter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1.jar!/com/google/common/util/concurrent/RateLimiter.class">
+      <file leaf-file-name="KafkaTopicPartitionInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/KafkaTopicPartitionInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="437">
+              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consumer.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/consumer.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsumerDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/simple/ConsumerDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="980">
+              <caret line="67" column="43" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -145,8 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BitSet(</find>
-      <find>LoadingCache</find>
       <find>new Thread(</find>
       <find>Thread(</find>
       <find>run(</find>
@@ -175,6 +243,8 @@
       <find>mongodb</find>
       <find>RateL</find>
       <find>RateLimiter</find>
+      <find>hbase</find>
+      <find>kafka</find>
     </findStrings>
     <replaceStrings>
       <replace>O</replace>
@@ -220,7 +290,6 @@
         <option value="$PROJECT_DIR$/Test/src/main/java/CallableFuture/FutureTaskDemo.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/CallableFuture/CountTask.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/algorithm/MaxSubList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/JavaKafkaSimpleConsumerAPI.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/Spout.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/Topology.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/ExclamationBolt.java" />
@@ -238,13 +307,14 @@
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/Test1.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/_093/WordTest2.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/_122/WordCountTopology.java" />
-        <option value="$PROJECT_DIR$/Test/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/Test/src/main/java/storm/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/key/jorigin/redis/RedLock.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/Constants.java" />
         <option value="$PROJECT_DIR$/Test/src/test/java/GuavaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/JavaKafkaSimpleConsumerAPI.java" />
+        <option value="$PROJECT_DIR$/Test/src/test/java/Test.java" />
       </list>
     </option>
   </component>
@@ -282,7 +352,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="835" />
@@ -303,10 +373,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,6 +391,65 @@
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="mongo" type="462c0819:PsiDirectoryNode" />
+              <item name="runoob" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,7 +474,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
@@ -356,8 +483,8 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="apacheK" type="462c0819:PsiDirectoryNode" />
+              <item name="rocketmq" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
@@ -369,6 +496,21 @@
               <item name="jorigin" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jorigin" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
@@ -506,6 +648,41 @@
             <path>
               <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.kafka:kafka-clients:2.1.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.kafka:kafka-clients:2.1.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="kafka-clients-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.kafka:kafka-clients:2.1.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="kafka-clients-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.kafka:kafka-clients:2.1.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="kafka-clients-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.kafka:kafka-clients:2.1.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="kafka-clients-2.1.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: org.apache.kafka:kafka_2.11:0.8.2.2" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
@@ -532,10 +709,38 @@
               <item name="redisson-3.11.2.jar" type="462c0819:PsiDirectoryNode" />
               <item name="redisson" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jedis-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jedis-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jorigin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: redis.clients:jedis:2.9.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="jedis-2.9.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jedis" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,7 +775,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GuavaTest.testAcquire">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -752,9 +957,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.GuavaTest.testAcquire" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GuavaTest.testAcquire" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Test (1)" />
         <item index="3" class="java.lang.String" itemvalue="Application.WordCountTopology" />
         <item index="4" class="java.lang.String" itemvalue="Application.WordTest2" />
       </list>
@@ -792,7 +997,10 @@
       <workItem from="1563852932436" duration="5912000" />
       <workItem from="1565071804893" duration="5000" />
       <workItem from="1565072038820" duration="6716000" />
-      <workItem from="1566392221873" duration="1574000" />
+      <workItem from="1566392221873" duration="2349000" />
+      <workItem from="1566560121802" duration="981000" />
+      <workItem from="1567656746824" duration="34000" />
+      <workItem from="1567674953415" duration="2633000" />
     </task>
     <servers />
   </component>
@@ -829,7 +1037,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170010000" />
+    <option name="totallyTimeSpent" value="174433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -841,7 +1049,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="835" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -861,14 +1069,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36638454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31197098" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24459459" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35066506" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28040057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28397712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32648125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32648125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1103,121 +1311,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5282">
-          <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/redisson/redisson/3.11.2/redisson-3.11.2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/redis/RedLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/KafkaConsumerOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.11.2/redisson-3.11.2.jar!/org/redisson/RedissonRedLock.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <marker date="1565075313340" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1565075313340" expanded="false" signature="136:182" ph="..." />
-            <marker date="1565075313340" expanded="true" signature="283:294" ph=" { " />
-            <marker date="1565075313340" expanded="true" signature="307:313" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="351:362" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="421:427" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="480:491" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="519:525" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="579:590" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="648:654" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="680:691" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="720:726" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mongo/runoob/MongoDBJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mongo/runoob/MongoDBJDBC2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/src/test/java/LinkedListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10792">
-          <caret line="616" column="39" lean-forward="false" selection-start-line="616" selection-start-column="39" selection-end-line="616" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/ref/WeakReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="56" column="10" lean-forward="false" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/ref/Reference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5092">
-          <caret line="307" column="56" lean-forward="false" selection-start-line="307" selection-start-column="56" selection-end-line="307" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/lang/ref/ReferenceQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1244,7 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2698">
           <caret line="181" column="31" lean-forward="false" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,7 +1344,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
           <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,15 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2698">
           <caret line="181" column="31" lean-forward="false" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/src/test/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,6 +1451,307 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/redisson/redisson/3.11.2/redisson-3.11.2.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.11.2/redisson-3.11.2.jar!/org/redisson/RedissonRedLock.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/redis/RedLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/base/Ticker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="244" column="16" lean-forward="false" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/base/Preconditions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="122" column="21" lean-forward="false" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/util/concurrent/SmoothRateLimiter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1.jar!/com/google/common/util/concurrent/RateLimiter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/util/concurrent/RateLimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7505">
+          <caret line="421" column="16" lean-forward="false" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/GuavaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/producer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/META-INF/maven/redis.clients/jedis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2831">
+          <caret line="149" column="45" lean-forward="false" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/KafkaProducerOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/MyKafkaPartitioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/KafkaBrokerInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/k211_0822/ConsumerGroupExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/k211_0822/ConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/k211_0822/HelloWorldProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/k211_0822/SimpleConsumerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4230">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#12063#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/k211_0822/SimplePartitioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/JavaKafkaSimpleConsumerAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="62" column="28" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="570" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/JavaKafkaSimpleConsumerAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/low_api_k210_0821/KafkaTopicPartitionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/simple/ConsumerDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="67" column="43" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/consumer.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.1.0/kafka-clients-2.1.0.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="103" column="11" lean-forward="false" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding>
+            <marker date="1544434145482" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544434145482" expanded="false" signature="157:3042" ph="..." />
+            <marker date="1544434145482" expanded="false" signature="4291:4302" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="4361:4367" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="4491:4653" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="4703:4788" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="4906:5071" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="5190:11703" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="12142:12977" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="13023:13282" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="13322:13575" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="13666:14898" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="14953:15041" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="15122:15794" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="15838:15849" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="15919:15925" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="15957:16408" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="16472:17977" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="17983:18001" ph="/**...*/" />
+            <marker date="1544434145482" expanded="false" signature="18071:18082" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="18134:18140" ph=" }" />
+            <marker date="1544434145482" expanded="false" signature="18197:18208" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="18257:18263" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="18351:19949" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="20009:20105" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="20195:21065" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="20801:20876" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="21095:21106" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="21173:21179" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="21226:21633" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="21710:21802" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="21897:22282" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="22313:22324" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="22369:22375" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="22436:22628" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="22737:22999" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="23061:23498" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="23571:24353" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="24420:25194" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="25247:25346" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="25417:26371" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="26438:26538" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="26623:27252" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="27308:27319" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="27378:27384" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="27445:27545" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="27624:28287" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="28346:28436" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="28511:28747" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="28810:29220" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="29284:29696" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="29738:29982" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="30097:30212" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="30345:31037" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="31132:31240" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="31353:31598" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="31687:31780" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="31887:32126" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="32151:32162" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="32200:32206" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="32212:32230" ph="/**...*/" />
+            <marker date="1544434145482" expanded="false" signature="32301:32312" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="32370:32376" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="32418:32845" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="32871:32882" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="32903:32909" ph=" }" />
+            <marker date="1544434145482" expanded="true" signature="33074:33590" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="33657:35185" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="35241:35693" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="35735:35918" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="35947:36296" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="36325:36436" ph="{...}" />
+            <marker date="1544434145482" expanded="true" signature="36486:36705" ph="{...}" />
+            <marker date="1544434145482" expanded="false" signature="36731:36742" ph=" { " />
+            <marker date="1544434145482" expanded="false" signature="36763:36769" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/KafkaConsumerOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="e#811#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mongo/runoob/MongoDBJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1375,156 +1762,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/key/jorigin/mongo/runoob/MongoDBJDBC2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="519">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <element signature="e#863#878#0" expanded="true" />
+            <element signature="e#1198#1215#0" expanded="true" />
+            <element signature="e#2566#2576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1253#1254#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/rocketmq/example/UseExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="-1111">
+          <caret line="99" column="41" lean-forward="false" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/redisson/redisson/3.11.2/redisson-3.11.2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5282">
-          <caret line="278" column="0" lean-forward="false" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.11.2/redisson-3.11.2.jar!/org/redisson/RedissonRedLock.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <marker date="1565075313340" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1565075313340" expanded="false" signature="136:182" ph="..." />
-            <marker date="1565075313340" expanded="true" signature="283:294" ph=" { " />
-            <marker date="1565075313340" expanded="true" signature="307:313" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="351:362" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="421:427" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="480:491" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="519:525" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="579:590" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="648:654" ph=" }" />
-            <marker date="1565075313340" expanded="false" signature="680:691" ph=" { " />
-            <marker date="1565075313340" expanded="false" signature="720:726" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/redis/RedLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/KafkaConsumerOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/consumer.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/key/jorigin/kafka/apacheK/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/base/Ticker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="244" column="16" lean-forward="false" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
-          <folding>
-            <element signature="e#9346#9347#0" expanded="true" />
-            <element signature="e#9393#9394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/base/Preconditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="122" column="21" lean-forward="false" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/util/concurrent/SmoothRateLimiter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
-          <folding>
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3091#3092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1.jar!/com/google/common/util/concurrent/RateLimiter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/16.0.1/guava-16.0.1-sources.jar!/com/google/common/util/concurrent/RateLimiter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="421" column="16" lean-forward="true" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
-          <folding>
-            <element signature="e#21640#21641#0" expanded="true" />
-            <element signature="e#21685#21686#0" expanded="true" />
-            <element signature="e#25222#25223#0" expanded="true" />
-            <element signature="e#25297#25298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/src/test/java/GuavaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
