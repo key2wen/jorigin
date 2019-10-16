@@ -3,8 +3,12 @@ import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-//https://www.jianshu.com/p/5d4fe4b2a726
-public class GuavaTest {
+/**
+ * https://www.jianshu.com/p/5d4fe4b2a726
+ *
+ * 限流算法：漏桶 | 令牌桶
+ */
+public class GuavaRateLimiterTest {
 
     @Test
     public void testAcquire() throws InterruptedException {
@@ -36,7 +40,7 @@ public class GuavaTest {
         RateLimiter limiter2 = RateLimiter.create(1); //每秒生成的令牌数
 
 
-        for(int i = 0; i < 100; i++){
+        for (int i = 0; i < 100; i++) {
 
 //            limiter2.acquire();//阻塞获取
 
@@ -44,7 +48,7 @@ public class GuavaTest {
 
             boolean ha = limiter2.tryAcquire(0, TimeUnit.SECONDS); //非阻塞，来设置等待超时时间的方式获取令牌，如果超timeout为0，则代表非阻塞，获取不到立即返回。
 
-            if(ha) {
+            if (ha) {
                 System.out.println("cutTime=" + i);
             } else {
                 System.err.println("err cutTime=" + i);
