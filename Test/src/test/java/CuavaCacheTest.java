@@ -1,3 +1,4 @@
+import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
@@ -36,6 +37,10 @@ public class CuavaCacheTest {
         _sessionCache.get(key);
     }
 
+
+    static Cache<String,String> cache = CacheBuilder.newBuilder()
+            .maximumSize(10000)
+            .expireAfterWrite(15, TimeUnit.MINUTES).build();
 
 
 //    static LoadingCache<Long, CustomSessionEntity> _sessionCache = CacheBuilder.newBuilder()
