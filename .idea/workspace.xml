@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33ac3f3b-ca01-4a55-aa2f-ce1fbd6739cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/src/test/java/CuavaCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/src/test/java/CuavaCacheTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jorigin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-es/spring-es.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
