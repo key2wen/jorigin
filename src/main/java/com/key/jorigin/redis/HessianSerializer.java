@@ -18,9 +18,11 @@ public class HessianSerializer implements RedisComponent.Serializer {
 
     private Logger logger = LoggerFactory.getLogger(HessianSerializer.class);
 
+    @Override
     public byte[] serialization(Object object) {
-        if (object == null)
+        if (object == null) {
             return null;
+        }
 
         try {
             ByteArrayOutputStream bao = new ByteArrayOutputStream();
