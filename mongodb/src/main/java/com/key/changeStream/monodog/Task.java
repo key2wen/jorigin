@@ -29,7 +29,7 @@ public class Task {
      * save the mongo change stream current position
      */
     protected String incrementalPosition;
-    protected String zmCluster;
+    protected String cluster;
     protected String creator;
     protected String team;
     protected Instant createdTimeUtc;
