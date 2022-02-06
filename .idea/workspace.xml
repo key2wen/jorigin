@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33ac3f3b-ca01-4a55-aa2f-ce1fbd6739cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mongodb/mongodb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb/src/main/java/com/key/changeStream/diffdog/Attribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb/src/main/java/com/key/changeStream/diffdog/BsonCvrtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb/src/main/java/com/key/changeStream/diffdog/PrimaryKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb/src/main/java/com/key/changeStream/diffdog/Translator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb/src/main/java/com/key/delete/DeleteOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongodb/src/main/java/com/key/distinct/Distinct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-es/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-es/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/key/jorigin/redis/HessianSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/key/jorigin/redis/HessianSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

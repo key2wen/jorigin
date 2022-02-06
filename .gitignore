@@ -9,3 +9,4 @@
 *.iml
 .idea/*
 .idea
+.idea/workspace.xml
