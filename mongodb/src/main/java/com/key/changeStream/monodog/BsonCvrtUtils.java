@@ -1,4 +1,4 @@
-package com.key.changeStream.diffdog;
+package com.key.changeStream.monodog;
 
 import org.apache.commons.lang3.tuple.Pair;
 import org.bson.*;

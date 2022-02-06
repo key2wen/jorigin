@@ -1,4 +1,4 @@
-package com.key.changeStream.diffdog;
+package com.key.changeStream.monodog;
 
 import com.mongodb.client.model.changestream.ChangeStreamDocument;
 import com.mongodb.client.model.changestream.OperationType;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.key.changeStream.diffdog.Constants.OBJECT_ID_FIELD_NAME;
+import static com.key.changeStream.monodog.Constants.OBJECT_ID_FIELD_NAME;
 
 
 /**

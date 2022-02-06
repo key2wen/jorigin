@@ -1,4 +1,4 @@
-package com.key.changeStream.diffdog;
+package com.key.changeStream.monodog;
 
 /**
  * @author real
