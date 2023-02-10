@@ -1,8 +1,10 @@
 package algorithm;
 
-import javafx.util.Pair;
-
+//import javafx.util.Pair;
+//
 import java.util.Scanner;
+
+import org.apache.commons.lang3.tuple.Pair;
 
 /**
  * 最大子串
@@ -35,7 +37,8 @@ public class MaxSubList {
         }
         System.out.println();
 
-        return new Pair<>(maxN, value);
+//        return new Pair<>(maxN, value);
+        return Pair.of(maxN, value);
     }
 
     public static Pair<Integer, Integer> maxSubListValue2(int[] data) {
@@ -61,7 +64,8 @@ public class MaxSubList {
         }
         System.out.println();
 
-        return new Pair<>(maxN, value);
+//        return new Pair<>(maxN, value);
+        return Pair.of(maxN, value);
     }
 
     //把空间也去掉了
@@ -94,7 +98,8 @@ public class MaxSubList {
 
         System.out.println();
 
-        return new Pair<>(maxN, value);
+//        return new Pair<>(maxN, value);
+        return Pair.of(maxN, value);
     }
 
 
