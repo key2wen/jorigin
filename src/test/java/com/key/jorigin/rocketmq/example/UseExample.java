@@ -114,7 +114,8 @@ public class UseExample {
         RocketMqMessage message = new StringMessage("body");
 
         /**
-         * 1. 使用了keys 消息索引就不会存储在consume_queue(Topic+queueNo形成consumeQueue的最小单位集合)文件中,即也不会根据consume_queue对应的topic来消费(topic下有多个queue无法保证消息消费顺序)，
+         * 1. 使用了keys 消息索引就不会存储在consume_queue(Topic+queueNo形成consumeQueue的最小单位集合)文件中,
+         *   即也不会根据consume_queue对应的topic来消费(topic下有多个queue无法保证消息消费顺序)，
          *    也无法根据 tag来过滤消息消费，因为tag只存储在consume_queue对应topic的索引文件上
          *    Consume_queue最小单位集合内容(存储单元格式：CommitLogOffset+Size+MessageTagHashCode)
          * 2.使用来keys 消息索引会存储在 indexFile上（一个类似hashMap结构的文件（slotTable + Index_Linked_List））
@@ -124,7 +125,8 @@ public class UseExample {
          *
          * 4. 使用了keys, 消费者也就无法进行平均分配，负载均衡
          *
-         * 5. todo 上面总结的有点小问题 设置了keys应该消息还是会存储在consume_queue中，只是指定了发给某一个queue（如果根据keys做select,如下代码）；消费端拉取消息时，
+         * 5. todo 上面总结的有点小问题 设置了keys应该消息还是会存储在consume_queue中，
+         *  todo 只是指定了发给某一个queue（如果根据keys做select,如下代码）；消费端拉取消息时，
          *  todo 被分配到该queue的消费者单独对它消费; 这样消费者才能区分topic进行消费；
          *
          */

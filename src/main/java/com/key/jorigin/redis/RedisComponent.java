@@ -9,7 +9,7 @@ import org.springframework.beans.factory.InitializingBean;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.util.SafeEncoder;
 
-import javax.annotation.PreDestroy;
+//import javax.annotation.PreDestroy;
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -72,6 +72,7 @@ public class RedisComponent implements InitializingBean {
         try {
             long value = System.currentTimeMillis() + expired + 1;
             // 通过setnx获取一个lock
+            //Redis Setnx（SET if Not eXists） 命令在指定的 key 不存在时，为 key 设置指定的值。设置成功，返回 1 。 设置失败，返回 0 。
             long acquired = jedisCluster.setnx(lockKey, String.valueOf(value));
             if (acquired == 1) {
                 // setnx成功，则成功获取一个锁
@@ -80,7 +81,8 @@ public class RedisComponent implements InitializingBean {
                 // setnx失败，说明锁仍然被其他对象保持，检查其是否已经超时
                 long oldValue = Long.valueOf(jedisCluster.get(lockKey));
                 if (oldValue < System.currentTimeMillis()) {
-                    // 超时
+                    // 超时情况
+                    //返回给定 key 的旧值。 当 key 没有旧值时，即 key 不存在时，返回 nil 。当 key 存在但不是字符串类型时，返回一个错误。
                     String getValue = jedisCluster.getSet(lockKey, String.valueOf(value));
                     // 获取锁成功
                     if (Long.valueOf(getValue).longValue() == oldValue) {
@@ -168,8 +170,8 @@ public class RedisComponent implements InitializingBean {
      * @param key
      * @param value
      */
-    public void setnx(final String key, final Object value) {
-        jedisCluster.setnx(SafeEncoder.encode(key), serialization(value));
+    public Long setnx(final String key, final Object value) {
+        return jedisCluster.setnx(SafeEncoder.encode(key), serialization(value));
     }
 
     /**
@@ -178,12 +180,13 @@ public class RedisComponent implements InitializingBean {
      * @param key
      * @param value
      */
-    public void setnx(final String key, final Object value, final int seconds) {
+    public Long setnx(final String key, final Object value, final int seconds) {
         byte[] byteKey = SafeEncoder.encode(key);
         Long res = jedisCluster.setnx(byteKey, serialization(value));
         if (res != null && res > 0) {
             jedisCluster.expire(byteKey, seconds);
         }
+        return res;
     }
 
     /**
@@ -421,7 +424,7 @@ public class RedisComponent implements InitializingBean {
         return serializer.deserializationList(byteArray, elementC);
     }
 
-    @PreDestroy
+//    @PreDestroy
     public void destory() {
         try {
             jedisCluster.close();
