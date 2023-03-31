@@ -1,0 +1,56 @@
+生产者：
+初始化：
+Producer  -> DefaultMQProducer
+                DefaultMQProducerImpl ->
+                   MQClientInstance ->
+                      ClientRemotingProcessor  (extends NettyRequestProcessor)
+                      MQClientAPIImpl ->
+                         ClientRemotingProcessor
+                         RpcHook // 如果有hook 会在rpc前后做一些钩子函数的处理
+                         NettyRemotingClient ->
+                            ChannelEventListener （为null)
+                            EventLoopGroup -> new NioEventLoopGroup
+                            ClientRemotingProcessor (处理39，40，220...不同状态码)
+                         MQAdminImpl
+                         PullMessageService ->
+                            LinkedBlockingQueue<PullRequest> pullRequestQueue = new LinkedBlockingQueue();
+                         RebalanceService
+                         this.defaultMQProducer = new DefaultMQProducer("CLIENT_INNER_PRODUCER");
+                      ConcurrentHashMap<String, MQProducerInner> producerTable; //注册Producer到Map中
+                      this.start()   //Instance会调用上面诸多属性对象的start方法初始化线程,netty,等等)
+                      this.serviceState = ServiceState.RUNNING;  //把Instance状态改为Running
+                   mQClientInstance.sendHeartbeatToAllBrokerWithLock();  //加Lock发送heartbeat(ProducerData)
+发送消息：
+RocketMqMessage message = new StringMessage("body");
+message.setDelayTimeLevel(5); //level=0，表示不延时。level=1，表示 1 级延时，对应延时 1s。level=2 表示 2 级延时，对应5s
+//对应每个topic和queueid下面的所有文件，默认存储位置为$HOME/store/consumequeue/{topic}/{queueId}/{fileName}，每条数据的结构如下：
+  消息起始物理偏移量(physical offset, long 8字节)+消息大小(int,4字节)+tagsCode(long 8字节)
+message.setTags("tag_test"); //订阅时如果指定了Tag，会根据broker端HashCode来快速查找到订阅的消息，consumer再根据tag equal判断
+message.setKeys("orderIdxxxxx");
+message.setKeys("orderIdxxxxx"); //请务必保证 key 尽可能唯一，返样可以避免潜在的哈希冲突
+rocketMqProducer.sendMessage(message); //某些应用如果不关注消息是否发送成功，请直接使用sendOneWay方法发送消息
+
+1.获取TopicPublishInfo：
+    topicPublishInfo = this.tryToFindTopicPublishInfo(msg.getTopic());
+    private List<MessageQueue> messageQueueList = new ArrayList(); //MessageQueue包含： topic, brokerName, queueId.
+2. 拿到一个Queue: // MessageQueue, 默认轮训queue list来获取一个brokerName下的queue, 下一次根据之前选择的brokerName来轮训该broker下面的Queue.
+3. 找到对应broker Queue的地址： MQClientInstance缓存了：ConcurrentHashMap<String, HashMap<Long, String>> brokerAddrTable;
+4. 调用 MQClientAPIImpl.send发送 byte[] 类型的消息:
+       4.1 : 发送消息有三种模式选择：sync（默认）, async, oneway,
+       4.2: NettyRemotingClient: 创建netty channel: 对应addr是否已存在channel, 没有则加锁lock创建channel并缓存起来
+             -> ChannelFuture channelFuture = this.bootstrap.connect(RemotingHelper.string2SocketAddress(addr));
+             -> Channel channel = channelFuture.getChannel();
+       4.3 用channel发送消息：状态码是310/10， channel.writeAndFlush(request).addListener(new ChannelFutureListener() {},
+            如果发送的是Sync消息（默认）：则通过 CountdownLatch.wait()等待返回response后线程继续； oneway则不关注消息是否发送成功是否发送日志。
+            如果发送的Async消息: 则调用发送后返回，当设置了callback则当channel收到消息发送成功事件后会通知业务的回调方法：sendCallback.onSuccess(sendResult);
+       4.4 sync消息返回SendResult结果，包含：SendStatus， msgId， MessageQueue， queueOffset， transactionId
+
+
+Broker Server:
+1。 brokerConfig: rocketmqHome, namesrvAddr,brokerIP1, brokerName=localHostName(), brokerId=MASTER_ID,broker_perm=PermName.PERM_READ | PermName.PERM_WRITE,..
+2.NettyServerConfig: listenPort = 10911(默认端口),serverWorkerThreads=8, serverCallbackExecutorThreads=0 serverSelectorThreads=3,
+                    serverOnewaySemaphoreValue = 256, serverAsyncSemaphoreValue = 64, serverChannelMaxIdleTimeSeconds = 120;
+3.MessageStoreConfig: //存储跟路径为/root/store, //commitlog路径:/root/store/commitlog,
+                // ConsumeQueue file size, default is 30W  一个consumequeue下面的每个queue对应的文件大小为30w*20，刚好5.8M
+                int haListenPort = 10912; //slave监听端口号，默认为MASTER监听端口号加1
+

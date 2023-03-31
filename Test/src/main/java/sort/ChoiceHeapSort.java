@@ -13,7 +13,6 @@ public class ChoiceHeapSort {
      * 堆：实际上是一颗 完全二叉树 ，但是它还满足父结点大于（或小于）子结点特性。
      * 父结点大于子结点称为最大堆（或大顶堆，array[i]>=array[2i+1] && array[i]>=array[2i+2]，i从0开始），
      * 父结点小于子结点称为最小堆（或小顶堆，array[i]<=array[2i+1] && array[i]<=array[2i+2] ，i从0开始）
-
      *
      * 7.1 算法描述
      将初始待排序关键字序列(R1,R2….Rn)构建成大顶堆，此堆为初始的无序区；
@@ -24,7 +23,6 @@ public class ChoiceHeapSort {
      不断重复此过程直到有序区的元素个数为n-1，则整个排序过程完成。
 
      最佳情况：T(n) = O(nlogn) 最差情况：T(n) = O(nlogn) 平均情况：T(n) = O(nlogn)
-
      *
      * @param a
      */

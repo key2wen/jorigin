@@ -2,17 +2,18 @@ package algorithm;
 
 //import javafx.util.Pair;
 //
+
 import java.util.Scanner;
 
 import org.apache.commons.lang3.tuple.Pair;
 
 /**
- * 最大子串
+ * 最大子串: 如 2, 9, 3, 1, -1, -5, -6, 8, ..，最大子串为：2+9+3+1=15
  * 以第n个节点结尾的最大子串未：Max[n]
  * 1. Max[n] = data[n] + （Max[n-1] > 0 ? Max[n-1] : 0）
  * 2. Max[0] = data[0]
  */
-public class MaxSubList {
+public class MaxSumValSubList {
 
     public static Pair<Integer, Integer> maxSubListValue(int[] data) {
 
