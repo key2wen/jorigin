@@ -49,6 +49,7 @@ public class JavaReflect {
         Field[] allFields = JavaReflect.class.getDeclaredFields(); // 获得所有字段
         allFields[0].setAccessible(true); // 忽略访问权限修饰符
 
+
         //泛型擦除
         List<JavaReflect> list = new ArrayList<>();
 //        list.add(5); 编译无法通过
@@ -60,6 +61,7 @@ public class JavaReflect {
 
         System.out.println(list.size());
         System.out.println(list);
+
     }
 
     public static void main(String[] args) throws InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchMethodException {

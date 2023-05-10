@@ -1,0 +1,126 @@
+优点：
+    1. 充分利用 位运算， int 共享高低位
+    2. 利用CountdownLatch实现 sync同步发送消息, 交给同一个后台线程接收同步事件 用队列减少竞争
+    3.
+问题：
+    1.线程池到处创建定义，乱
+    2. 代码本身乱
+
+生产者：
+初始化：
+Producer  -> DefaultMQProducer
+                DefaultMQProducerImpl ->
+                   MQClientInstance ->
+                      ClientRemotingProcessor  (extends NettyRequestProcessor)
+                      MQClientAPIImpl ->
+                         ClientRemotingProcessor
+                         RpcHook // 如果有hook 会在rpc前后做一些钩子函数的处理
+                         NettyRemotingClient ->
+                            ChannelEventListener （为null)
+                            EventLoopGroup -> new NioEventLoopGroup
+                            ClientRemotingProcessor (处理39，40，220...不同状态码)
+                         MQAdminImpl
+                         PullMessageService ->
+                            LinkedBlockingQueue<PullRequest> pullRequestQueue = new LinkedBlockingQueue();
+                         RebalanceService
+                         this.defaultMQProducer = new DefaultMQProducer("CLIENT_INNER_PRODUCER");
+                      ConcurrentHashMap<String, MQProducerInner> producerTable; //注册Producer到Map中
+                      this.start()   //Instance会调用上面诸多属性对象的start方法初始化线程,netty,等等)
+                      this.serviceState = ServiceState.RUNNING;  //把Instance状态改为Running
+                   mQClientInstance.sendHeartbeatToAllBrokerWithLock();  //加Lock发送heartbeat(ProducerData)
+发送消息：
+RocketMqMessage message = new StringMessage("body");
+message.setDelayTimeLevel(5); //level=0，表示不延时。level=1，表示 1 级延时，对应延时 1s。level=2 表示 2 级延时，对应5s
+//对应每个topic和queueid下面的所有文件，默认存储位置为$HOME/store/consumequeue/{topic}/{queueId}/{fileName}，每条数据的结构如下：
+  消息起始物理偏移量(physical offset, long 8字节)+消息大小(int,4字节)+tagsHashCode(long 8字节)
+message.setTags("tag_test"); //订阅时如果指定了Tag，会根据broker端HashCode来快速查找到订阅的消息，consumer再根据tag equal判断
+message.setKeys("orderIdxxxxx");
+message.setKeys("orderIdxxxxx"); //请务必保证 key 尽可能唯一，返样可以避免潜在的哈希冲突
+rocketMqProducer.sendMessage(message); //某些应用如果不关注消息是否发送成功，请直接使用sendOneWay方法发送消息
+
+1.获取TopicPublishInfo：
+    topicPublishInfo = this.tryToFindTopicPublishInfo(msg.getTopic());
+    private List<MessageQueue> messageQueueList = new ArrayList(); //MessageQueue包含： topic, brokerName, queueId.
+2. 拿到一个Queue: // MessageQueue, 默认轮训queue list来获取一个brokerName下的queue, 下一次根据之前选择的brokerName来轮训该broker下面的Queue.
+3. 找到对应broker Queue的地址： MQClientInstance缓存了：ConcurrentHashMap<String, HashMap<Long, String>> brokerAddrTable;
+4. 调用 MQClientAPIImpl.send发送 byte[] 类型的消息:
+       4.1 : 发送消息有三种模式选择：sync（默认）, async, oneway,
+       4.2: NettyRemotingClient: 创建netty channel: 对应addr是否已存在channel, 没有则加锁lock创建channel并缓存起来
+             -> ChannelFuture channelFuture = this.bootstrap.connect(RemotingHelper.string2SocketAddress(addr));
+             -> Channel channel = channelFuture.getChannel();
+       4.3 用channel发送消息：状态码是310/10， channel.writeAndFlush(request).addListener(new ChannelFutureListener() {},
+            如果发送的是Sync消息（默认）：则通过 CountdownLatch.wait()等待返回response后线程继续； oneway则不关注消息是否发送成功是否发送日志。
+            如果发送的Async消息: 则调用发送后返回，当设置了callback则当channel收到消息发送成功事件后会通知业务的回调方法：sendCallback.onSuccess(sendResult);
+       4.4 sync消息返回SendResult结果，包含：SendStatus， msgId， MessageQueue， queueOffset， transactionId
+
+消息协议格式: <length-4byte><序列化类型-1byte><header length-3byte><header-data><body-data>   -> NettyEncoder.
+
+Broker Server:
+1.brokerConfig: rocketmqHome, namesrvAddr,brokerIP1, brokerName=localHostName(), brokerId=MASTER_ID,broker_perm=PermName.PERM_READ | PermName.PERM_WRITE,..
+2.NettyServerConfig: listenPort = 10911(默认端口),serverWorkerThreads=8, serverCallbackExecutorThreads=0 serverSelectorThreads=3,
+                    serverOnewaySemaphoreValue = 256, serverAsyncSemaphoreValue = 64, serverChannelMaxIdleTimeSeconds = 120;
+3.MessageStoreConfig: //存储跟路径为/root/store, //commitlog路径:/root/store/commitlog,
+                // ConsumeQueue file size, default is 30W  一个consumequeue下面的每个queue对应的文件大小为30w*20，刚好5.8M
+                int haListenPort = 10912; //slave监听端口号，默认为MASTER监听端口号加1
+
+Broker存储：https://blog.csdn.net/KilluaZoldyck/article/details/76775397
+consumequeue: 消息起始物理偏移量(physical offset, long 8字节)+消息大小(int,4字节)+tagsCode(long 8字节), fileName就是偏移量
+
+Broker写消息到commit log：putMessage
+   1.topic长度不超过127字节：if (msg.getTopic().length() > Byte.MAX_VALUE）， slave不支持写消息
+   2. 所有消息都存在一个单一的CommitLog文件里面，然后有后台线程异步(1ms每次)的同步到ConsumeQueue，再由Consumer进行消费
+   3. 延迟消息：topic重定义: SCHEDULE_TOPIC_XXXX, queueId: 延迟投递消息的delaylevel-1,
+   4. 加锁：- synchronized
+        a.用读锁获取到commit log的最后一个MapedFile(5.8M) mapedFile = this.mapedFileQueue.getLastMapedFileWithLock();
+        b.不存在最后一个MapedFile则加写锁创建一个mappedFile 加入到mapfile队列: this.readWriteLock.writeLock().lock();  this.mapedFiles.add(mapedFile);  this.readWriteLock.writeLock().unlock();
+        c.加锁进行后续顺序写操作到commit log： synchronized (this){}   - this 对应 CommitLog Object，
+   5. commitlog的文件缓存映射： 使用java nio MappedByteBuffer - 提高文件读写性能
+        a. 缓存文件：MappedFile: this.fileChannel = new RandomAccessFile(this.file, "rw").getChannel();
+           nio MappedByteBuffer(缓存)：this.mappedByteBuffer = this.fileChannel.map(MapMode.READ_WRITE, 0, fileSize);
+        b.写消息到缓存文件： ByteBuffer byteBuffer = this.mappedByteBuffer.slice();  byteBuffer.position(currentPos);
+         //Write messages to the queue buffer (消息写入commitlog的mapfile对应的bytebuffer. )
+         byteBuffer.put(this.msgStoreItemMemory.array(), 0, msgLen);  //private final ByteBuffer msgStoreItemMemory;
+   6.刷盘：// Synchronization flush  是同步还是异步刷盘 (默认异步刷盘)。 - 异步刷盘的机制时达到4block(16k)
+                //所谓同步刷盘，一方面master的刷盘模式要配置成SYNC_FLUSH， 另一方面，消息的属性中必须设置了等待刷盘结果的属性。
+                //也就是说需要master的同步刷盘模式和投递者设置的等待刷盘结果的消息属性一起配合才可以。
+          a.交给由一个线程进行刷盘：this.mappedByteBuffer.force();内存映射文件的刷盘动作。 完成通过countdownLatch.countDown()来通知请求线程
+          b.当前线程通过countdownLatch.await(timeout)来等待刷盘结束,或者超时结束返回刷盘失败.
+   7. 复制消息： Synchronous write double 是同步复制到slave 还是异步复制到slave.
+          a.同样使用 countdownLatch.await(timeout)等待 HaService同步结果返回.
+   8.后台线程：每间隔1Ms 做一次 ConsumeQueue和索引文件的写入:  Thread.sleep(1); this.doReput(); - 理论上会出现消息发送成功,但是写入ConsumeQueue失败导致消费不到这条消息。
+问题：为什么要用countdownLatch而不是直接调用等待结果？ 个人觉得用countdownLatch来阻塞/通知，可以专门由一个线程去做刷新动作，所有刷新请求入队列，避免刷新的并发性控制
+RocketMQ为什么快：写CommitLog的思想是：批量(异步刷盘16k后刷盘)和append顺序写， 其他附加信息ConsumeQueue,Index写操作另外异步进行。
+
+Consumer消费者消费消息：
+    1. 消费模式： 广播消费模式，位点默认存储在本地。 集群消费模式：位点默认存储在broker. 位点从broker拉取到client以后会缓存在本地。
+    2. 默认集群模式，group下平均消费：当 消费者数量 大于 队列数量时，部分消费者消费不到消息
+        a.当新增/删除 消费者时，加锁：重新re-balance平均分配消费
+    3.  启动consumer: (加锁synchronized启动)
+        创建并启动 netty bootstrap 进程：this.mQClientAPIImpl.start();
+            a.处理收到的消息：ch.pipeline().addLast(new NettyClientHandler())
+        创建定期任务: a.每2分钟定期获取nameserver地址， b. 每30秒从nameserver获取broker信息， c.每30秒向broker发送心跳
+            d.每5秒定期通知broker更新消费位点consumerOffset， e.根据broker队列积压的消息，每分钟动态调整消费线程池大小：
+            MQClientInstance.this.adjustThreadPool();
+            this.consumeExecutor.setCorePoolSize(this.consumeExecutor.getCorePoolSize() + 1);
+        // Start pull service： this.pullMessageService.start();
+        // Start rebalance service：  this.rebalanceService.start();
+    3. 启动消费者后会做一次：
+            //从NS获取每一个topic的路由信息，并更新pub  ,sub信息。
+            this.updateTopicSubscribeInfoWhenSubscriptionChanged();
+            //给broker 发送producer ,consumer的心跳信息。
+            this.mQClientFactory.sendHeartbeatToAllBrokerWithLock();
+            //因为有新的消费者加入，触发一次。
+            this.mQClientFactory.rebalanceImmediately();
+    3. consumer端每一个消息队列会对应有一个处理队列： RebalanceImpl.processQueueTable(MessageQueue----ProcessQueue) 通过 updateProcessQueueTableInRebalance 更新
+           protected final ConcurrentHashMap<MessageQueue, ProcessQueue> processQueueTable =new ConcurrentHashMap<MessageQueue, ProcessQueue>(64);
+    4. 关于 ProcessQueue：
+        private final ReadWriteLock lockTreeMap = new ReentrantReadWriteLock();
+        //DefaultMQPushConsumerImpl.pullMessage->PullCallback.onSuccess->ProcessQueue.putMessage中把获取到的msg存入到msgTreeMap中
+        //queueOffset<-->MessageExt  从broker拉取的消息存到本地，也就是存入msgTreeMap   接收到的消息做规则匹配满足后，会加入到ProcessQueue.msgTreeMap
+        //拉取到消息后首先存入PullResult.msgFoundList，然后进行规则匹配，匹配的msg会进一步存入ProcessQueue.msgTreeMap,
+        // 当业务消费msg结果打回broker后，都会移除该msg，见removeMessage，如果消费msg结果打回broker失败，则这些msg还是会留在本地msgTreeMap,进行重新发送，见processConsumeResult.submitConsumeRequestLater
+        重点：treeMap(红黑树实现排序)的key是该条msg对应在队列中的offset, 这样多线程消费时能起到按offset顺序消费，当然如果要求严格的顺序那么还需要加锁
+        private final TreeMap<Long, MessageExt> msgTreeMap = new TreeMap<Long, MessageExt>();
+        /* 每从broker获取到消息，就要移动该offset，也就是从broker拉取到消息的最大位点 */
+        private volatile long queueOffsetMax = 0L;
+        /* 该ProcessQueue中有效的msg数,见本类的 putMessage 接口 */

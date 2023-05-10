@@ -1,10 +1,20 @@
 package sort;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.PriorityQueue;
+
 /**
  * @author 张文辉
  */
 public class ChoiceHeapSort {
     /**
+     * Java PriorityQueue 就是最小堆树：https://blog.csdn.net/kobejayandy/article/details/46832797
+     * 1. 将集合初始化为最小堆：将非叶子节点从后向前遍历， 将非叶子节点进行下沉siftDown操作(如果比自己的子节点小则交换) - 完成最小堆初始化
+     * 2. 遍历时：先拿到 queue[0], 然后将 queue[n-1] 和 queue[0] 交换，再将queue[0]下沉，重新得到最小堆， 再继续遍历。
+     * 3. 插入元素：添加新的元素进来在数组的最后面增加， 再对改元素进行 siftUp 向上操作，保证最小堆
+     * 4. 删除元素： 将删除元素queue[index] 和 queue[n-1] 交换， 将 queue[index]进行下沉 siftDown操作， 设置queue[n-1] = null移除.
+     *
      * 堆排序，选择排序，每次都选择堆顶元素
      *
      * 堆排序（Heapsort）是指利用堆这种数据结构所设计的一种排序算法。
@@ -32,7 +42,7 @@ public class ChoiceHeapSort {
      * @param n       需要创建的堆大小，元数个数
      * @param notLeaf 非叶子节点
      */
-    public static void createMaxHeap(int[] a, int n, int notLeaf) {
+    public static void createMaxHeap1(int[] a, int n, int notLeaf) {
         int superIndex = notLeaf; // 非叶子结点
         int leafData = a[superIndex];
 
@@ -57,13 +67,47 @@ public class ChoiceHeapSort {
         a[superIndex] = leafData;
     }
 
+    /**
+     * self code
+     *
+     * @param a
+     * @param length
+     * @param idx
+     */
+    public static void createMaxHeapForElement1(int[] a, int length, int idx) {
+        int currentIdx = idx;
+        int leftSubIdx = currentIdx * 2 + 1;
+        int rightSubIdx = leftSubIdx + 1;
+        int compareIdx = leftSubIdx;
+        while (leftSubIdx < length) {
+            if (rightSubIdx < length && a[leftSubIdx] < a[rightSubIdx]) {
+                compareIdx = rightSubIdx;
+            }
+            if (a[currentIdx] < a[compareIdx]) {
+                int temp = a[currentIdx];
+                a[currentIdx] = a[compareIdx];
+                a[compareIdx] = temp;
+
+                currentIdx = leftSubIdx;
+                leftSubIdx = currentIdx * 2 + 1;
+                rightSubIdx = leftSubIdx++;
+                compareIdx = leftSubIdx;
+            } else {
+                break;
+            }
+        }
+    }
+
     public static void initCreateMaxHeap(int[] a) {
         /**
          * 循环所有的非叶子节点 对应的 数组index
          * 处理完所有的非叶子节点，则最大堆就构成了
          */
-        for (int i = (a.length - 1) / 2 - 1; i >= 0; i--) {
-            createMaxHeap(a, a.length, i);
+//        for (int i = (a.length - 1) / 2 - 1; i >= 0; i--) {
+//            createMaxHeap1(a, a.length, i);
+//        }
+        for (int i = a.length / 2 - 1; i >= 0; i--) {
+            createMaxHeap1(a, a.length, i);
         }
     }
 
@@ -74,7 +118,7 @@ public class ChoiceHeapSort {
             int temp = a[currLength];
             a[currLength] = a[0];
             a[0] = temp;
-            createMaxHeap(a, currLength, 0);
+            createMaxHeap1(a, currLength, 0);
         }
     }
 
@@ -85,5 +129,25 @@ public class ChoiceHeapSort {
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + "    ");
         }
+
+        System.out.println();
+        System.out.println();
+        //java priorityQueue
+        List<Integer> b = Arrays.asList(45, 23, 24, 13, 12, 35, 23, 45, 68, 10, 9, 40, 1);
+        PriorityQueue priorityQueue = new PriorityQueue(b);
+        priorityQueue.forEach(e -> System.out.print(e + ", "));
+
+        System.out.println();
+        Object e = priorityQueue.poll();
+        while (e != null) {
+            System.out.print(e + ", ");
+            e = priorityQueue.poll();
+        }
+
+        System.out.println();
+        System.out.println();
+        System.out.println(3 / 2);
     }
+
+
 }

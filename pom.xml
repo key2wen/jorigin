@@ -11,6 +11,8 @@
     <modules>
         <module>Test</module>
         <module>spring-es</module>
+        <module>milvus</module>
+        <module>origin</module>
     </modules>
 
 

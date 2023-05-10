@@ -44,7 +44,7 @@ public class Sum implements Callable<Long> {
         System.out.println(res2.get());
         System.out.println(res3.get());
 
-        for(Future<Long> res : resList){
+        for (Future<Long> res : resList) {
             System.out.println(res.get());
         }
 

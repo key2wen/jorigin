@@ -179,4 +179,7 @@ public class UseExample {
         }
     }
 
+    public void testAssert(){
+        assert this.getClass() == null;
+    }
 }
